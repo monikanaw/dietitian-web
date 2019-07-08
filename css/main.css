@@ -1,0 +1,155 @@
+body, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font: inherit;
+}
+
+body {
+max-width: 100vw;
+height: 100%;
+}
+
+/* NAV */
+.header-nav{
+  min-height: 6vh;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  z-index: 10;
+}
+.header-nav-2{
+  background-color: black;
+}
+
+.nav-bar {
+  float: right;
+}
+
+.nav-bar > li {
+  display: inline-block;
+  padding: 0.8em 1em 0 1em;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.nav-bar > li:last-child a {
+  padding-right: 3em;
+}
+
+/* MAIN IMAGE + TITLE */
+.wrap {
+    width: 100%;
+
+}
+.image {
+    background-image: url("/images/blueberry.jpg");
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+
+}
+.image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.65);
+}
+.text {
+    color: #fff;
+    position: relative;
+    top: 30vh;
+    font-size: 5em;
+    text-align: center;
+    margin: auto;
+}
+.title-diet{
+  font-family: 'Rokkitt', serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.subtitle-diet{
+    font-family: 'Rokkitt', serif;
+    font-style: italic;
+    font-size: 0.6em;
+    margin-top: -0.2em;
+}
+
+/* ABOUT US */
+.about-us {
+  background-color: white;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+.about-us:before{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ content: '';
+ background: white;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ transform-origin:top left;
+ transform: skewY(3deg);
+ z-index: 5;
+
+}
+.about-text{
+  font-size: 1.8em;
+  padding: 2em;
+  margin: 3em 3em;
+  text-align: center;
+  font-family: 'Literata', serif;
+  line-height: 1.6;
+  position: relative;
+  z-index: 6;
+}
+
+.about-text p {
+  font-weight: bold;
+}
+
+/* Disease */
+.list-of-diseases {
+position: relative;
+
+}
+
+.canvas {
+  background-image: url("/images/avocado.jpg");
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.canvas:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+}
