@@ -72,7 +72,7 @@ height: 100%;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.65);
+    background: rgba(0,0,0,0.7);
 }
 .text {
     color: #fff;
@@ -112,7 +112,7 @@ height: 100%;
  left: 0;
  right: 0;
  transform-origin:top left;
- transform: skewY(3deg);
+ transform: skewY(2.5deg);
  z-index: 5;
 
 }
@@ -137,19 +137,53 @@ position: relative;
 
 }
 
-.canvas {
+.avocado {
   background-image: url("/images/avocado.jpg");
   position: relative;
-  height: 100vh;
+  height: 135vh;
   width: 100%;
 }
 
-.canvas:before{
+.avocado:before{
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.7);
+}
+.avocado-items{
+  position: absolute;
+  margin-top: 3em;
+}
+.avocado-squares{
+  display:flex;
+  flex-wrap: wrap;
+}
+.diseases-block {
+  background-color: white;
+  width: 28vw;
+  height: 35vh;
+  border-radius: 12px;
+  margin: 2em;
+  display: flex;
+}
+
+.diseases-text {
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 1em 2em 0.7em 2em;
+}
+
+.diseases-block p {
+    color: #000;
+    font-size: 1.7em;
+    margin: auto 0.2em;
+}
+
+.diseases-block img {
+  height: 38%;
+  margin: 1em 0.2em auto 0.2em;
 }
