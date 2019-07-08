@@ -140,7 +140,7 @@ position: relative;
 .avocado {
   background-image: url("/images/avocado.jpg");
   position: relative;
-  height: 135vh;
+  height: 140vh;
   width: 100%;
 }
 
@@ -185,5 +185,49 @@ position: relative;
 
 .diseases-block img {
   height: 38%;
-  margin: 1em 0.2em auto 0.2em;
+  margin: 1em 0.2em auto 0.5em;
+}
+
+/* specialists */
+.specialists {
+}
+
+.specialists h2 {
+  text-align: center;
+  margin: 3em auto 1em auto;
+  font-size: 3.3em;
+  max-width: 35vw;
+  border-bottom: 2px solid #000;
+
+}
+.specialists-display {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+}
+
+.dietitian {
+  width: 22vw;
+  margin: 0.6em;
+  position: relative;
+}
+
+.dietitian img {
+  width: 22vw;
+  height: 32vh;
+}
+
+.name {
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  top: 6.5em;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+}
+
+.occupation {
+  font-size: 1.5em;
+  margin-top: 0.5em;
 }
