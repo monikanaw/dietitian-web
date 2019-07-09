@@ -302,3 +302,53 @@ position: relative;
 .social-icon {
   color: #fff;
 }
+
+/* dropdown menu */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 5em;
+}
+.dropbtn:after {
+   bottom: 2vh;
+   border: 10px solid;
+   border-color: #fff transparent transparent;
+   content: "";
+   height: 0;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, 0);
+   width: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+}
+.dropdown-content2 {
+  display: show;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-list > li {
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
