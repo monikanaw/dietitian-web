@@ -189,45 +189,62 @@ position: relative;
 }
 
 /* specialists */
-.specialists {
-}
-
 .specialists h2 {
   text-align: center;
   margin: 3em auto 1em auto;
   font-size: 3.3em;
   max-width: 35vw;
   border-bottom: 2px solid #000;
-
+  font-family: 'PT Sans', sans-serif;
 }
 .specialists-display {
   display: flex;
   max-width: 90%;
   margin: auto;
 }
+.link-to-dietitian:link {
+  text-decoration: none;
+  color: black;
+}
 
 .dietitian {
   width: 22vw;
   margin: 0.6em;
-  position: relative;
+
 }
 
 .dietitian img {
-  width: 22vw;
-  height: 32vh;
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  margin: auto;
 }
 
 .name {
-  font-size: 1.5em;
-  color: white;
-  position: absolute;
-  top: 6.5em;
-  background: rgba(0, 0, 0, 0.7);
+  font-size: 1.3em;
+  color: black;
   width: 100%;
   text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 1em;
 }
 
 .occupation {
-  font-size: 1.5em;
-  margin-top: 0.5em;
+  font-size: 1em;
+  text-align: center;
+  color: #5b5555;
+  margin-top:-0.5em;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+}
+.socialmedia {
+  color: #5b5555;
+  text-align: center;
+  margin-top: -0.2em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.fab {
+  margin: 0.2em;
 }
