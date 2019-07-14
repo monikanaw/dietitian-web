@@ -9,11 +9,11 @@
   <link href="https://fonts.googleapis.com/css?family=Literata|Rokkitt|PT+Sans&&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
   <link href="/fonts/css/all.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="/mainjs.js"></script>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
 </head>
 
 
@@ -22,29 +22,29 @@
     <body>
       <div id="page-container">
          <header>
-  <div class="header-nav">
-     <ul class="nav-bar">
-      <li><a href="/">Home</a></li>
-      <li><a href=#> Contact</a></li>
-      <li><a href=#> Price list</a></li>
-      <div class="dropdown">
-       <p class="dropbtn" id="dropbtn"> Dietitians </p>
-         <div class="dropdown-content" id="dropdownContent">
-           <ul class="dropdown-list">
-             <li><a href="#"> Rachel Green </a></li>
-             <li><a href="#"> Monica Geller </a></li>
-             <li><a href="#"> Joey Tribbiani </a></li>
-             <li><a href="#"> Phoebe Buffay </a></li>
-         </div>
-      </div>
-     </ul>
-  </div>
+  <nav>
+    <div class="header-nav">
+       <ul class="nav-bar">
+        <li><a href="/">Home</a></li>
+        <li class="hover-drop-down-menu"><a href=#> Dietitians</a>
+          <ul class="drop-down-menu">
+            <li><a href="./dietitian/Rachel.html"> Rachel Green </a></li>
+            <li><a href="./dietitian/Monica.html"> Monica Geller </a></li>
+            <li><a href="./dietitian/Joey.html"> Joey Tribbiani </a></li>
+            <li><a href="./dietitian/Phoebe.html"> Phoebe Buffay </a></li>
+          </ul>
+        </li>
+        <li><a href=./price/price.html> Price list</a></li>
+        <li><a href=./contact/contact.html> Contact </a></li>
+       </ul>
+    </div>
+  </nav>
 </header>
 
         <div class="wrap">
     <div class="image">
         <div class="text">
-             <i class="fas fa-leaf fa-lg"></i>
+             <i class="main-logo fas fa-leaf fa-lg"></i>
              <p class="title-diet"> Harmonydiet</p>
              <p class="subtitle-diet"> Make your life better </p>
         </div>
@@ -147,14 +147,22 @@
       </div>
   </div>
 
+<div class="address-info">
+  <div class="address-text">
+      <div class="adress-paragraph"> <p>Lorem ipsum dolor sit amet,</p> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+      <div class="adress-paragraph"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  <div id="mapdiv" class="mapdiv"></div>
+</div>
+
         <footer class="footer">
     <div class="footer-description">
       <div class="footer-logo">
-        <i class="fas fa-leaf fa-2x"></i>
+        <i class="footer-logo-image fas fa-leaf fa-3x"></i>
         <p>  Harmonydiet </p>
       </div>
       <div class="footer-address">
-        <p> Grunwaldzka 22,</br> 50-363 Wroclaw </p>
+        <p> Szewska 61,</br> 50-139 Wroclaw </p>
         <p> call us on 511 211 3112 </p>
       </div>
         <div class="social-block">

@@ -20,6 +20,7 @@ max-width: 100vw;
 height: 100%;
 }
 
+
 /* NAV */
 .header-nav{
   min-height: 6vh;
@@ -38,7 +39,7 @@ height: 100%;
 
 .nav-bar > li {
   display: inline-block;
-  padding: 0.8em 1em 0 1em;
+  padding: 0.8em 1em;
 }
 
 .nav-bar a {
@@ -51,6 +52,63 @@ height: 100%;
 
 .nav-bar > li:last-child a {
   padding-right: 3em;
+}
+
+/* dropdown menu */
+
+ul li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-nav ul li {
+  position: relative;
+}
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.drop-down-menu-2 {
+  background-color: black;
+}
+
+
+.drop-down-menu li {
+  width: 190px;
+  border-radius: 4px;
+}
+
+.drop-down-menu li a {
+ display: block;
+ padding: 10px 14px;
+}
+
+.drop-down-menu li a:hover {
+  background-color: #6a5f5c;
+}
+
+.hover-drop-down-menu:hover ul {
+  display: block;
+}
+
+.hover-drop-down-menu {
+  position: relative;
+}
+
+.hover-drop-down-menu:before {
+ bottom: 1vh;
+ border: 5px solid;
+ border-color: #fff transparent transparent;
+ content: "";
+ height: 0;
+ position: absolute;
+ transform: translate(-50%, 0);
+ width: 0;
+ left: 8.3em;
+ top: 1.3em;
 }
 
 /* MAIN IMAGE + TITLE */
@@ -76,22 +134,26 @@ height: 100%;
 }
 .text {
     color: #fff;
-    position: relative;
-    top: 30vh;
     font-size: 5em;
     text-align: center;
-    margin: auto;
+}
+.main-logo {
+  position: relative;
+  top: 25vh;
 }
 .title-diet{
+  position: relative;
   font-family: 'Rokkitt', serif;
   font-weight: bold;
   font-size: 1.5em;
+  top: 12vh;
 }
 .subtitle-diet{
+    position: relative;
     font-family: 'Rokkitt', serif;
     font-style: italic;
     font-size: 0.6em;
-    margin-top: -0.2em;
+    bottom: 7vh;
 }
 
 /* ABOUT US */
@@ -189,9 +251,6 @@ position: relative;
 }
 
 /* specialists */
-.specialists {
-;
-}
 .specialists h2 {
   text-align: center;
   margin: 3em auto 1em auto;
@@ -257,98 +316,82 @@ position: relative;
 /* footer */
 .footer {
   width: 100%;
-  height: 20vh;
-  background-color: black;
-  margin-top: 5em;
+  height: 21vh;
+  background: black;
 }
 .footer-description {
   display: flex;
-  text-align: center;
-  margin: auto;
-  justify-content: space-around;
-  margin: auto 3em;
-}
-
-.footer-logo {
- color: #fff;
- text-align: center;
- padding-top: 1em;
-}
-.footer-logo {
- font-size: 1.4em;
- font-weight: bold;
-}
-
-.footer-address {
-  color: #fff;
-  font-size: 1.1em;
-  order: -1;
-  padding-top: 1em;
-}
-
-.social-block {
-  padding-top: 2em;
-}
-
-.social-block p{
-  color: #fff;
-  margin-bottom: -0.2em;
-}
-
-.social-list > li {
-  list-style-type: none;
-  display: inline-block;
-}
-.social-icon {
-  color: #fff;
-}
-
-/* dropdown menu */
-.dropbtn {
-  background-color: transparent;
+  top: 0em;
   color: white;
-  padding: 16px;
-  border: none;
+  justify-content: space-around;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-logo-image{
+  padding-top: 0.4em;
+}
+.footer-logo p {
+  font-size: 1.5em;
   font-weight: bold;
-  text-transform: uppercase;
-  padding-right: 5em;
+  margin-top: 0.2em
 }
-.dropbtn:after {
-   bottom: 2vh;
-   border: 10px solid;
-   border-color: #fff transparent transparent;
-   content: "";
-   height: 0;
-   left: 50%;
-   position: absolute;
-   transform: translate(-50%, 0);
-   width: 0;
+.footer-address {
+  order: -1;
+  font-weight: 600;
+
+}
+.social-block p {
+  margin-top: 1em;
+  font-weight: 600;
 }
 
-.dropdown {
+/* map */
+.address-info {
+  margin-top: 7em;
+}
+
+.address-text {
+  display: flex;
+  flex-grow: 1;
+  margin: 1em 2em 5em 2em;
+}
+.adress-paragraph {
+ font-size: 1.4em;
+ line-height: 1.4em;
+ margin: 0em 2em;
+ justify-content: space-around;
+}
+.adress-paragraph p{
+  font-weight: bold;
+}
+.mapdiv {
+  width: 100%;
+  height: 70vh;
+}
+/* Dietitian background */
+.dietitian-background {
+  background-image: url("/images/blueberry.jpg");
+  background-attachment: fixed;
   position: relative;
-  display: inline-block;
+  height: 40vh;
+}
+.dietitian-background:before {
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.7);
 }
 
-.dropdown-content {
-  display: none;
-}
-.dropdown-content2 {
-  display: show;
-  position: absolute;
-  background-color: #000;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.dietitian-headline {
+
 }
 
-.dropdown-list > li {
-  list-style-type: none;
-}
-
-.dropdown-content a {
-  color: #fff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* Rachel */
+.photo-of-rachel {
+  width: 30vw;
+  margin-top: 5em;
 }
