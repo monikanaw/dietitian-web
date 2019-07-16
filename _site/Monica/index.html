@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
+    <title>Harmonydiet- Monica Geller</title>
+  
 
-  <title> Website </title>
   <link href="/favicon.png" rel="icon">
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Literata|Rokkitt|PT+Sans&&display=swap" rel="stylesheet">
-
-
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="">
   <link href="/fonts/css/all.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="/mainjs.js"></script>
-  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></script>
+
+
 </head>
 
 
@@ -23,25 +30,28 @@
       <div id="page-container">
          <header>
   <nav>
-    <div class="header-nav">
-       <ul class="nav-bar">
-        <li><a href="/">Home</a></li>
-        <li class="hover-drop-down-menu"><a href=#> Dietitians</a>
-          <ul class="drop-down-menu">
-            <li><a href="./dietitian/Rachel.html"> Rachel Green </a></li>
-            <li><a href="./dietitian/Monica.html"> Monica Geller </a></li>
-            <li><a href="./dietitian/Joey.html"> Joey Tribbiani </a></li>
-            <li><a href="./dietitian/Phoebe.html"> Phoebe Buffay </a></li>
-          </ul>
-        </li>
-        <li><a href=./price/price.html> Price list</a></li>
-        <li><a href=./contact/contact.html> Contact </a></li>
-       </ul>
-    </div>
+    
+      <div class="header-nav-2">
+         <ul class="nav-bar">
+ <li><a href="/">Home</a></li>
+ <li class="hover-drop-down-menu"><a href=#> Dietitians</a>
+   <ul id="dropDownMenu" class="drop-down">
+     <li><a href="/Rachel"> Rachel Green </a></li>
+     <li><a href="/Monica"> Monica Geller </a></li>
+     <li><a href="/Joey"> Joey Tribbiani </a></li>
+     <li><a href="/Phoebe"> Phoebe Buffay </a></li>
+   </ul>
+ </li>
+ <li><a href=/price> Price list</a></li>
+ <li><a href=/contact> Contact </a></li>
+</ul>
+
+      </div>
+    
   </nav>
 </header>
 
-          <p class="description"> He gratuated from Nutrition and Genetics MSc at St Mary's University, Twickenham and The Natural Health (Nutrition) at International Career Institute (ICI) - UK </p>
+        <p class="description">Monica has a degree in Nutrition and Dietetics, a Postgraduate Certificate in Public Health and a Postgraduate Diploma in Sports Nutrition with the International Olympic Committee. </p>
 
         <footer class="footer">
     <div class="footer-description">

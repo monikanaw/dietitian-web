@@ -1,19 +1,13 @@
 <header>
   <nav>
-    <div class="header-nav">
-       <ul class="nav-bar">
-        <li><a href="/">Home</a></li>
-        <li class="hover-drop-down-menu"><a href=#> Dietitians</a>
-          <ul class="drop-down-menu">
-            <li><a href="./dietitian/Rachel.html"> Rachel Green </a></li>
-            <li><a href="./dietitian/Monica.html"> Monica Geller </a></li>
-            <li><a href="./dietitian/Joey.html"> Joey Tribbiani </a></li>
-            <li><a href="./dietitian/Phoebe.html"> Phoebe Buffay </a></li>
-          </ul>
-        </li>
-        <li><a href=./price/price.html> Price list</a></li>
-        <li><a href=./contact/contact.html> Contact </a></li>
-       </ul>
-    </div>
+    {% if page.title == "Harmonydiet" %}
+      <div class="header-nav">
+         {% include nav-links.html %}
+      </div>
+    {% else %}
+      <div class="header-nav-2">
+         {% include nav-links.html %}
+      </div>
+    {% endif %}
   </nav>
 </header>
