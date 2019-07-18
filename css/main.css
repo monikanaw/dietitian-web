@@ -30,6 +30,7 @@ margin: 0;
   width: 100vw;
   z-index: 10;
   background-color: transparent;
+  top: 0;
 }
 .header-nav-2{
   min-height: 6vh;
@@ -38,6 +39,7 @@ margin: 0;
   width: 100vw;
   z-index: 10;
   background-color: black;
+  top: 0;
 }
 
 .nav-bar {
@@ -97,6 +99,7 @@ ul li {
 
 .drop-down li a:hover {
   background-color: #6a5f5c;
+  z-index: 3;
 }
 
 .hover-drop-down-menu:hover ul {
@@ -364,7 +367,6 @@ position: relative;
   padding-top: 4em;
   background-color: #f2f2f2;
 }
-
 .address-text {
   display: flex;
   flex-grow: 1;
@@ -414,19 +416,77 @@ position: relative;
 .map {
   width: 100%;
   height: 70vh;
+  z-index: 2;
 }
 
-/* Dietitian background */
- .dietitian-background {
-   background-color: #eeecec;
- }
-
-/* Rachel */
-.photo-of-rachel {
-  width: 30vw;
+/* common style for dietician-subpage */
+.dietician-subpage-data {
+  position:relative;
+  height: 25vh;
+}
+.dietician-subpage-title {
+  position: absolute;
+  top: 1em;
+  left: 2.5em;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.dietician-subpage-info {
+  display: flex;
+  margin: 14em 2em 8em 2em;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.dietician-subpage-image{
+  flex: 1;
+  position: relative;
+}
+.photo-of-dietician-subpage {
+  max-width: 30vw;
+  height: 65vh;
+  position: absolute;
+  left: 3em;
+}
+.dietician-subpage-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 28em;
+  left: 3em;
+}
+.icon-text-subpage-dietician {
+ font-size: 2em;
+}
+.icon-subpage-dietician {
+  display: flex;
+}
+.icon-subpage {
+  width: 3em;
+  padding: 0.8em 2em 2em 0em;
+}
+.icon-subpage-dietician p {
+ padding: 0.8em 2em 2em 0em;
+}
+.dietician-subpage-description {
+  line-height: 1.4;
+  flex: 0 0 42vw;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 0.8em 3em 1.2em 3em;
   margin-top: 0;
 }
-
-.description {
-  margin-top:0;
+/* dietician-subtitle*/
+.dietician-subtitle {
+  position: absolute;
+  font-size: 2em;
+  top: 6em;
+}
+.rachel-subtitle {
+ left: 10em;
+}
+.monica-subtitle, .joey-subtitle {
+  left: 13em;
+}
+.phoebe-subtitle {
+  left: 5.5em;
 }

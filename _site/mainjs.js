@@ -10,8 +10,10 @@ $(function () {
 $(document).ready(function() {
   if(document.title == "Harmonydiet") {
     $('#dropDownMenu').addClass("drop-down-menu")
+    $('body').css('background', '#fff');
   } else {
     $('#dropDownMenu').addClass("drop-down-menu-2")
+    $('body').css('background', '#eeecec');
   }
 
    var map = L.map('map').setView([51.1110390,17.0347980], 18);
