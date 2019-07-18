@@ -228,13 +228,21 @@ position: relative;
 }
 .avocado-items{
   position: absolute;
-  margin-top: 3em;
+  margin: 4em 3em 1em 3em;
+}
+.diseases-text {
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 1em 2em 1.2em 2em;
 }
 .avocado-squares{
   display:flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .diseases-block {
+  flex: 0 1 25vw;
   background-color: white;
   width: 25vw;
   height: 33vh;
@@ -242,21 +250,13 @@ position: relative;
   margin: 2em auto;
   display: flex;
 }
-
-.diseases-text {
-  color: #fff;
-  font-size: 3.5em;
-  font-weight: bold;
-  margin: 1em 2em 0.7em 2em;
-}
-
 .diseases-block p {
-    color: #000;
-    font-size: 1.5em;
-    margin: auto 0.2em;
+  color: #000;
+  font-size: 1.5em;
+  margin: auto 0.2em;
 }
-
 .diseases-block img {
+  flex: 0 0 25%;
   height: 38%;
   margin: 1em 0.2em auto 0.5em;
 }
@@ -280,26 +280,21 @@ position: relative;
   max-width: 90%;
   margin: auto;
   padding-bottom: 5em;
-
 }
 .link-to-dietitian:link {
   text-decoration: none;
   color: black;
 }
-
 .dietitian {
-  width: 22vw;
-  margin: 0.8em;
-
+  flex: 0 1 22vw;
+  padding: 0.8em;
 }
-
 .dietitian img {
   width: 250px;
   height: 250px;
   border-radius: 150px;
   margin: auto;
 }
-
 .name {
   font-size: 1.3em;
   color: black;
@@ -309,7 +304,6 @@ position: relative;
   text-transform: uppercase;
   margin-top: 1em;
 }
-
 .occupation {
   font-size: 1em;
   text-align: center;
@@ -324,7 +318,6 @@ position: relative;
   margin-top: -0.2em;
   font-family: 'PT Sans', sans-serif;
 }
-
 .fab {
   margin: 0.4em;
 }
@@ -344,24 +337,25 @@ position: relative;
   width: 90%;
   margin: 0 auto;
 }
+.footer-logo {
+  flex: 0 1 28vw;
+}
 .footer-logo-image{
   padding-top: 0.4em;
 }
 .footer-logo p {
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 0.2em
+  margin-top: 0.2em;
 }
 .footer-address {
   order: -1;
   font-weight: 600;
-
 }
 .social-block p {
   margin-top: 1em;
   font-weight: 600;
 }
-
 /* above map */
 .address-info {
   padding-top: 4em;
@@ -369,14 +363,18 @@ position: relative;
 }
 .address-text {
   display: flex;
-  flex-grow: 1;
-  margin: 1em 2em 3em 2em;
+  margin: 0em 3em 3em 3em;
 }
 .adress-paragraph {
  font-size: 1.4em;
  line-height: 1.4em;
- margin: 0em 2em;
- justify-content: space-around;
+ flex: 0 1 50vw;
+ padding: 0em 3em 0em 2em;
+}
+.adress-paragraph-for-image {
+ flex: 1;
+ text-align: center;
+ padding-top: 3em;
 }
 .image-office {
   width: 38vw;
@@ -394,14 +392,12 @@ position: relative;
 }
 .address-contact {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   margin: 2em 0em;
 }
 .address-contact div {
   display: flex;
   max-width: 40vw;
-  flex-grow: 1;
 }
 .address-contact p {
  font-size: 0.8em;
@@ -418,7 +414,6 @@ position: relative;
   height: 70vh;
   z-index: 2;
 }
-
 /* common style for dietician-subpage */
 .dietician-subpage-data {
   position:relative;
@@ -489,4 +484,39 @@ position: relative;
 }
 .phoebe-subtitle {
   left: 5.5em;
+}
+/*contact*/
+.contact-subpage {
+  font-size: 1.5em;
+  margin: 4em 2em;
+}
+.form {
+ width: 40vw;
+ height: 100vh;
+ margin: 5em 0em 5em 10em;
+ padding-left: 2em;
+ padding-bottom: 3em;
+ background-color: #fff;
+ border: 1px solid #000;
+}
+.title-form {
+  font-size: 2em;
+  margin-left: 3em;
+}
+input{
+  width: 30vw;
+  margin: 1em;
+}
+textarea {
+ width: 30vw;
+ height: 20vh;
+ margin: 1em;
+}
+button {
+  background-color: #000;
+  font: #fff;
+  width: 8em;
+  height: 3em;
+  border: 1px solid #000;
+  border-radius: 5px;
 }

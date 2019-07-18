@@ -11,7 +11,7 @@ $(document).ready(function() {
   if(document.title == "Harmonydiet") {
     $('#dropDownMenu').addClass("drop-down-menu")
     $('body').css('background', '#fff');
-  } else {
+  }else{
     $('#dropDownMenu').addClass("drop-down-menu-2")
     $('body').css('background', '#eeecec');
   }
