@@ -51,29 +51,22 @@
   </nav>
 </header>
 
-        <form class="form" action="index.html" method="post">
+        <form class="form" id="form">
   <h3 class="title-form"> Contact us </h3>
 
   <fieldset>
-    <label for="name"> Name: </label><br>
-    <input type="text" id="name" name="user_name"><br>
+    <input class="input-first-line" type="text" placeholder="Name" id="name" name="user_name">
 
-    <label for="lastName"> Last name: </label><br>
-    <input type="text" id="lastName" name="user_lastname"><br>
+    <input class="input-first-line" type="text" placeholder="Phone number" id="phone" name="user_phone" maxlength="12"><br>
 
-    <label for="phone"> Phone number: </label><br>
-    <input type="tel" id="phone" name="user_phone"><br>
-
-    <label for="email"> Email: </label><br>
-    <input type="email" id="email" name="user_email"><br>
+    <input class="input-second-line"  type="email" placeholder="Email" id="email" name="user_email"><br>
   </fieldset>
 
   <fieldset>
-    <label for="bio"> Your problem: </label><br>
-    <textarea id="bio" name="user_bio"></textarea>
+    <textarea id="bio" placeholder="Your message" name="user_bio"></textarea>
   </fieldset>
 
-  <button type="submit"> Send your form </button>
+  <button id="button" type="submit"> Send </button>
 </form>
 
         <footer class="footer">

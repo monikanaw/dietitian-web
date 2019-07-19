@@ -8,8 +8,18 @@ $(function () {
 });
 
 $(document).ready(function() {
+  $("#name").focus();
+  $("#form").submit(function(event){
+      event.preventDefault();
+      $('#form').find('input, textarea').val('');
+  });
+
   if(document.title == "Harmonydiet") {
     $('#dropDownMenu').addClass("drop-down-menu")
+    $('body').css('background', '#fff');
+  }
+  else if(document.title == "Harmonydiet- Contact") {
+    $('#dropDownMenu').addClass("drop-down-menu-2")
     $('body').css('background', '#fff');
   }else{
     $('#dropDownMenu').addClass("drop-down-menu-2")
