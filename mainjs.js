@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('#dropDownMenu').addClass("drop-down-menu")
     $('body').css('background', '#fff');
   }
-  else if(document.title == "Harmonydiet- Contact") {
+  else if(document.title == "Harmonydiet- Contact" || document.title == "Harmonydiet- Price list") {
     $('#dropDownMenu').addClass("drop-down-menu-2")
     $('body').css('background', '#fff');
   }else{

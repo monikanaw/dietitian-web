@@ -534,3 +534,29 @@ button {
   font-weight: bold;
   margin: 2em 0em 0em 33em;
 }
+/*price-list*/
+.price-subpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  color: #000;
+  margin: 6em 1.5em 5em 1.5em;
+}
+.price-square {
+  flex: 0 0 28vw;
+  box-sizing: border-box;
+  margin: 1em 0em;
+  background-color: #eeecec;
+}
+.price-square-title{
+   font-size: 1.5em;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: bold;
+   background-color: #757d8a;
+   height: 12vh;
+   align-items: center;
+   padding: auto;
+
+}
