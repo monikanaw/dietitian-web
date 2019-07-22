@@ -207,16 +207,13 @@ ul li {
 /* Disease */
 .list-of-diseases {
 position: relative;
-
 }
-
 .avocado {
   background-image: url("/images/avocado.jpg");
   position: relative;
   height: 140vh;
   width: 100%;
 }
-
 .avocado:before{
     content: '';
     position: absolute;
@@ -535,28 +532,55 @@ button {
   margin: 2em 0em 0em 33em;
 }
 /*price-list*/
+
+.price-container {
+  background-image: url("/images/carrots.jpg");
+  position: relative;
+}
+.price-container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
 .price-subpage {
+  position: relative;
+  padding: 5em 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.price-item {
+  flex: 0 1 40vw;
+  margin: 3em 0em;
+  background-color: white;
+  border: 1px solid black;
+  align-items: center;
   text-align: center;
-  color: #000;
-  margin: 6em 1.5em 5em 1.5em;
+  height: 68vh;
 }
-.price-square {
-  flex: 0 0 28vw;
-  box-sizing: border-box;
-  margin: 1em 0em;
-  background-color: #eeecec;
+.price-title {
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #43485e;
+  text-align: center;
 }
-.price-square-title{
-   font-size: 1.5em;
-   color: #fff;
-   text-transform: uppercase;
-   font-weight: bold;
-   background-color: #757d8a;
-   height: 12vh;
-   align-items: center;
-   padding: auto;
-
+.price-logo {
+  color: #4fcb6b;
+  text-align: center;
+}
+.price-price{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+.price-time{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+.price-text{
+ padding: 1em 2em;
 }
