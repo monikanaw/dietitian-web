@@ -1,3 +1,4 @@
+/* * */
 body, span, applet, object, iframe,
 blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -9,519 +10,484 @@ tbody, tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption, footer,
 header, hgroup, menu, nav, output, ruby, section,
 summary, time, mark, audio, video {
- margin: 0;
- padding: 0;
- border: 0;
- font: inherit;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit; }
 
 body {
-max-width: 100vw;
-min-height: 100vh;
-margin: 0;
-}
-
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0; }
 
 /* NAV */
-.header-nav{
+.header-nav {
   min-height: 6vh;
   position: fixed;
   z-index: 10;
   width: 100vw;
-  z-index: 10;
-  background-color: transparent;
   top: 0;
-}
-.header-nav-2{
-  min-height: 6vh;
-  position: fixed;
-  z-index: 10;
-  width: 100vw;
-  z-index: 10;
-  background-color: black;
-  top: 0;
-}
+  background-color: transparent; }
+  .header-nav-2 {
+    min-height: 6vh;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    top: 0;
+    background-color: #000; }
+  .header-nav ul li {
+    position: relative; }
 
 .nav-bar {
-  float: right;
-}
-
-.nav-bar > li {
-  display: inline-block;
-  padding: 0.8em 1em;
-}
-
-.nav-bar a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-
-.nav-bar > li:last-child a {
-  padding-right: 3em;
-}
+  float: right; }
+  .nav-bar > li {
+    display: inline-block;
+    padding: 0.8em 1em; }
+    @media (max-width: 500px) {
+      .nav-bar > li {
+        padding: 0.3em 0.4em;
+        align-items: center;
+        letter-spacing: 2px; } }
+  .nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold; }
+    @media (max-width: 500px) {
+      .nav-bar a {
+        font-weight: 600; } }
+  .nav-bar > li:last-child a {
+    padding-right: 3em; }
+  @media (max-width: 500px) {
+    .nav-bar {
+      padding-right: 0em; } }
 
 /* dropdown menu */
-
 ul li {
   text-decoration: none;
-  display: inline-block;
-}
+  display: inline-block; }
 
-.header-nav ul li {
-  position: relative;
-}
 .drop-down-menu {
   display: none;
   position: absolute;
-  background-color: transparent;
   border-radius: 0px 0px 6px 6px;
-}
-
-.drop-down-menu-2 {
-  display: none;
-  position: absolute;
-  background-color: black;
-  border-radius: 0px 0px 6px 6px;
-}
+  background-color: transparent; }
+  .drop-down-menu-2 {
+    display: none;
+    position: absolute;
+    border-radius: 0px 0px 6px 6px;
+    background-color: #000; }
 
 .drop-down li {
   width: 190px;
-  border-radius: 4px;
-}
-
+  border-radius: 4px; }
+  @media (max-width: 500px) {
+    .drop-down li {
+      width: 110px; } }
 .drop-down li a {
- display: block;
- padding: 10px 14px;
-}
-
+  display: block;
+  padding: 10px 14px; }
+  @media (max-width: 500px) {
+    .drop-down li a {
+      font-size: 1em;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding: 4px 5px; } }
 .drop-down li a:hover {
   background-color: #6a5f5c;
-  z-index: 3;
-}
-
-.hover-drop-down-menu:hover ul {
-  display: block;
-}
+  z-index: 3; }
 
 .hover-drop-down-menu {
-  position: relative;
-}
-
-.hover-drop-down-menu:before {
- bottom: 1vh;
- border: 5px solid;
- border-color: #fff transparent transparent;
- content: "";
- height: 0;
- position: absolute;
- transform: translate(-50%, 0);
- width: 0;
- left: 8.3em;
- top: 1.3em;
-}
-
-/* MAIN IMAGE + TITLE */
-.wrap {
-    width: 100%;
-}
-.image {
-    background-image: url("/images/blueberry.jpg");
-    background-attachment: fixed;
-    position: relative;
-    height: 100vh;
-
-}
-.image:before{
-    content: '';
+  position: relative; }
+  .hover-drop-down-menu:hover ul {
+    display: block; }
+  .hover-drop-down-menu:before {
+    bottom: 1vh;
+    border: 5px solid;
+    border-color: #fff transparent transparent;
+    content: "";
+    height: 0;
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.7);
-}
-.text {
-    color: #fff;
-    font-size: 5em;
-    text-align: center;
-}
-.main-logo {
-  position: relative;
-  top: 25vh;
-}
-.title-diet{
-  position: relative;
-  font-family: 'Rokkitt', serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  top: 12vh;
-}
-.subtitle-diet{
-    position: relative;
-    font-family: 'Rokkitt', serif;
-    font-style: italic;
-    font-size: 0.6em;
-    bottom: 7vh;
-}
-
-/* ABOUT US */
-.about-us {
-  background-color: white;
-  background-size: cover;
-  height: 70vh;
-  position: relative;
-}
-.about-us:before{
- position: absolute;
- width: 100%;
- height: 100%;
- content: '';
- background: white;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- transform-origin:top left;
- transform: skewY(2.5deg);
- z-index: 5;
-
-}
-.about-text{
-  font-size: 1.8em;
-  padding: 2em;
-  margin: 3em 3em;
-  text-align: center;
-  font-family: 'Literata', serif;
-  line-height: 1.6;
-  position: relative;
-  z-index: 6;
-}
-
-.about-text p {
-  font-weight: bold;
-}
-
-/* Disease */
-.list-of-diseases {
-position: relative;
-}
-.avocado {
-  background-image: url("/images/avocado.jpg");
-  position: relative;
-  height: 140vh;
-  width: 100%;
-}
-.avocado:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.7);
-}
-.avocado-items{
-  position: absolute;
-  margin: 4em 3em 1em 3em;
-}
-.diseases-text {
-  color: #fff;
-  font-size: 3.5em;
-  font-weight: bold;
-  margin: 1em 2em 1.2em 2em;
-}
-.avocado-squares{
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.diseases-block {
-  flex: 0 1 25vw;
-  background-color: white;
-  width: 25vw;
-  height: 33vh;
-  border-radius: 12px;
-  margin: 2em auto;
-  display: flex;
-}
-.diseases-block p {
-  color: #000;
-  font-size: 1.5em;
-  margin: auto 0.2em;
-}
-.diseases-block img {
-  flex: 0 0 25%;
-  height: 38%;
-  margin: 1em 0.2em auto 0.5em;
-}
-
-/* specialists */
-.specialists {
-   background-color: #fff;
-}
-.specialists h2 {
-  padding-top: 2.5em;
-  text-align: center;
-  margin: 0 auto 1em auto;
-  font-size: 3.5em;
-  max-width: 35vw;
-  font-weight: 600;
-  border-bottom: 2px solid #000;
-  font-family: 'PT Sans', sans-serif;
-}
-.specialists-display {
-  display: flex;
-  max-width: 90%;
-  margin: auto;
-  padding-bottom: 5em;
-}
-.link-to-dietitian:link {
-  text-decoration: none;
-  color: black;
-}
-.dietitian {
-  flex: 0 1 22vw;
-  padding: 0.8em;
-}
-.dietitian img {
-  width: 250px;
-  height: 250px;
-  border-radius: 150px;
-  margin: auto;
-}
-.name {
-  font-size: 1.3em;
-  color: black;
-  width: 100%;
-  text-align: center;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-top: 1em;
-}
-.occupation {
-  font-size: 1em;
-  text-align: center;
-  color: #5b5555;
-  margin-top:-0.5em;
-  text-transform: uppercase;
-  font-family: 'PT Sans', sans-serif;
-}
-.socialmedia {
-  color: #5b5555;
-  text-align: center;
-  margin-top: -0.2em;
-  font-family: 'PT Sans', sans-serif;
-}
-.fab {
-  margin: 0.4em;
-}
+    transform: translate(-50%, 0);
+    width: 0;
+    left: 8.3em;
+    top: 1.3em; }
+    @media (max-width: 500px) {
+      .hover-drop-down-menu:before {
+        left: 8.7em;
+        top: 0.7em; } }
 
 /* footer */
 .footer {
   width: 100%;
   height: 21vh;
-  background: black;
-}
-.footer-description {
-  display: flex;
-  top: 0em;
-  color: white;
-  justify-content: space-around;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-}
-.footer-logo {
-  flex: 0 1 28vw;
-}
-.footer-logo-image{
-  padding-top: 0.4em;
-}
-.footer-logo p {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 0.2em;
-}
-.footer-address {
-  order: -1;
-  font-weight: 600;
-}
+  background: #000; }
+  .footer-description {
+    display: flex;
+    top: 0em;
+    color: #fff;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; }
+  .footer-logo {
+    flex: 0 1 28vw; }
+    .footer-logo p {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 0.2em; }
+    .footer-logo-image {
+      padding-top: 0.4em; }
+  .footer-address {
+    order: -1;
+    font-weight: 600; }
+
 .social-block p {
   margin-top: 1em;
-  font-weight: 600;
-}
+  font-weight: 600; }
+
+/* MAIN IMAGE + TITLE */
+.wrap {
+  width: 100%; }
+
+.image {
+  background-image: url("/images/blueberry.jpg");
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh; }
+  .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7; }
+
+.text {
+  color: #fff;
+  font-size: 5em;
+  text-align: center; }
+
+.main-logo {
+  position: relative;
+  top: 25vh; }
+
+.title-diet {
+  position: relative;
+  font-family: "Rokkitt", serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  top: 12vh; }
+  @media (max-width: 500px) {
+    .title-diet {
+      font-size: 0.6em;
+      top: 27vh; } }
+
+.subtitle-diet {
+  position: relative;
+  font-family: "Rokkitt", serif;
+  font-style: italic;
+  font-size: 0.6em;
+  bottom: 7vh; }
+  @media (max-width: 500px) {
+    .subtitle-diet {
+      font-size: 0.4em;
+      top: 24vh; } }
+
+/* ABOUT US */
+.about-us {
+  background-color: #fff;
+  background-size: cover;
+  height: 70vh;
+  position: relative; }
+  .about-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: top left;
+    transform: skewY(2.5deg);
+    z-index: 5; }
+
+.about-text {
+  font-size: 1.8em;
+  padding: 2em;
+  margin: 3em 3em;
+  text-align: center;
+  font-family: "Literata", serif;
+  line-height: 1.6;
+  position: relative;
+  z-index: 6; }
+  .about-text p {
+    font-weight: bold; }
+
+/* Disease */
+.list-of-diseases {
+  position: relative; }
+
+.avocado {
+  background-image: url("/images/avocado.jpg");
+  position: relative;
+  height: 140vh;
+  width: 100%; }
+  .avocado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7; }
+  .avocado-items {
+    position: absolute;
+    margin: 4em 3em 1em 3em; }
+
+.diseases-text {
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 1em 2em 1.2em 2em; }
+
+.avocado-squares {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.diseases-block {
+  flex: 0 1 25vw;
+  background-color: #fff;
+  width: 25vw;
+  height: 33vh;
+  border-radius: 12px;
+  margin: 2em auto;
+  display: flex; }
+  .diseases-block p {
+    color: #000;
+    font-size: 1.5em;
+    margin: auto 0.2em; }
+  .diseases-block img {
+    flex: 0 0 25%;
+    height: 38%;
+    margin: 1em 0.2em auto 0.5em; }
+
+/* specialists */
+.specialists {
+  background-color: #fff; }
+  .specialists h2 {
+    padding-top: 2.5em;
+    text-align: center;
+    margin: 0 auto 1em auto;
+    font-size: 3.5em;
+    max-width: 35vw;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+    font-family: "PT Sans", sans-serif; }
+  .specialists-display {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 5em; }
+
+.link-to-dietitian:link {
+  text-decoration: none;
+  color: #000; }
+
+.dietitian {
+  flex: 0 1 22vw;
+  padding: 0.8em; }
+  .dietitian img {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    margin: auto; }
+
+.name {
+  font-size: 1.3em;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 1em; }
+
+.occupation {
+  font-size: 1em;
+  text-align: center;
+  color: #5b5555;
+  margin-top: -0.5em;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif; }
+
+.socialmedia {
+  color: #5b5555;
+  text-align: center;
+  margin-top: -0.2em;
+  font-family: "PT Sans", sans-serif; }
+
+.fab {
+  margin: 0.4em; }
+
 /* above map */
 .address-info {
   padding-top: 4em;
-  background-color: #f2f2f2;
-}
+  background-color: #f2f2f2; }
+
 .address-text {
   display: flex;
-  margin: 0em 3em 3em 3em;
-}
+  margin: 0em 3em 3em 3em; }
+
 .adress-paragraph {
- font-size: 1.4em;
- line-height: 1.4em;
- flex: 0 1 50vw;
- padding: 0em 3em 0em 2em;
-}
-.adress-paragraph-for-image {
- flex: 1;
- text-align: center;
- padding-top: 3em;
-}
+  font-size: 1.4em;
+  line-height: 1.4em;
+  flex: 0 1 50vw;
+  padding: 0em 3em 0em 2em; }
+  .adress-paragraph > p {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 1em;
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.2em;
+    max-width: 80%; }
+  .adress-paragraph-for-image {
+    flex: 1;
+    text-align: center;
+    padding-top: 3em; }
+
 .image-office {
   width: 38vw;
   margin-top: 7em;
-  border-radius: 15px;
-}
-.adress-paragraph > p{
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-  margin-right: 1em;
-  font-family: 'PT Sans', sans-serif;
-  line-height: 1.2em;
-  max-width: 80%;
-}
+  border-radius: 15px; }
+
 .address-contact {
   display: flex;
   flex-direction: column;
-  margin: 2em 0em;
-}
-.address-contact div {
-  display: flex;
-  max-width: 40vw;
-}
-.address-contact p {
- font-size: 0.8em;
- font-weight: 700;
-}
+  margin: 2em 0em; }
+  .address-contact div {
+    display: flex;
+    max-width: 40vw; }
+  .address-contact p {
+    font-size: 0.8em;
+    font-weight: 700; }
+
 .images-contact {
   height: 2.5rem;
   width: 2.5rem;
-  padding: 0.7em 1em 0em 0em;
-}
+  padding: 0.7em 1em 0em 0em; }
+
 /* map */
 .map {
   width: 100%;
   height: 70vh;
-  z-index: 2;
-}
+  z-index: 2; }
+
 /* common style for dietician-subpage */
 .dietician-subpage-data {
-  position:relative;
-  height: 25vh;
-}
+  position: relative;
+  height: 25vh; }
+
 .dietician-subpage-title {
   position: absolute;
   top: 1em;
   left: 2.5em;
   font-size: 4em;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+
 .dietician-subpage-info {
   display: flex;
   margin: 14em 2em 8em 2em;
   justify-content: space-around;
-  align-items: flex-start;
-}
-.dietician-subpage-image{
+  align-items: flex-start; }
+
+.dietician-subpage-image {
   flex: 1;
-  position: relative;
-}
+  position: relative; }
+
 .photo-of-dietician-subpage {
   max-width: 30vw;
   height: 65vh;
   position: absolute;
-  left: 3em;
-}
+  left: 3em; }
+
 .dietician-subpage-icons {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 28em;
-  left: 3em;
-}
+  left: 3em; }
+
 .icon-text-subpage-dietician {
- font-size: 2em;
-}
-.icon-subpage-dietician {
-  display: flex;
-}
+  font-size: 2em; }
+
 .icon-subpage {
   width: 3em;
-  padding: 0.8em 2em 2em 0em;
-}
-.icon-subpage-dietician p {
- padding: 0.8em 2em 2em 0em;
-}
+  padding: 0.8em 2em 2em 0em; }
+  .icon-subpage-dietician {
+    display: flex; }
+    .icon-subpage-dietician p {
+      padding: 0.8em 2em 2em 0em; }
+
 .dietician-subpage-description {
   line-height: 1.4;
   flex: 0 0 42vw;
   font-size: 20px;
   background-color: #fff;
   padding: 0.8em 3em 1.2em 3em;
-  margin-top: 0;
-}
+  margin-top: 0; }
+
 /* dietician-subtitle*/
 .dietician-subtitle {
   position: absolute;
   font-size: 2em;
-  top: 6em;
-}
+  top: 6em; }
+
 .rachel-subtitle {
- left: 10em;
-}
+  left: 10em; }
+
 .monica-subtitle, .joey-subtitle {
-  left: 13em;
-}
+  left: 13em; }
+
 .phoebe-subtitle {
-  left: 5.5em;
-}
+  left: 5.5em; }
+
 /*contact*/
 .form {
- width: 60vw;
- height: 100vh;
- margin: 6em 0em 0em 10em;
-}
+  width: 60vw;
+  height: 100vh;
+  margin: 6em 0em 0em 10em; }
+
 .title-form {
   font-size: 2em;
-  margin-left: 0.7em;
-}
-.input-first-line{
-  width: 20vw;
+  margin-left: 0.7em; }
+
+.input-first-line, .input-second-line, textarea {
   margin: 1em;
-  height: 6vh;
   background-color: #f1f1f3;
   border: none;
   font-size: 1em;
   padding-left: 1em;
-  font-family: 'Times New Roma', sans-serif;
-}
+  font-family: "Times New Roma", sans-serif; }
+
+.input-first-line {
+  width: 20vw;
+  height: 6vh; }
+
 .input-second-line {
- width: 44vw;
- margin: 1em;
- height: 6vh;
- background-color: #f1f1f3;
- border: none;
- font-size: 1em;
- padding-left: 1em;
- font-family: 'Times New Roma', sans-serif;
-}
+  width: 44vw;
+  height: 6vh; }
+
 textarea {
- width: 43vw;
- height: 24vh;
- margin: 1em;
- background-color: #f1f1f3;
- border: none;
- font-size: 1em;
- padding: 1em;
- font-family: 'Times New Roma', sans-serif;
-}
+  width: 43vw;
+  height: 24vh; }
+
 button {
   background-color: #000;
   color: #fff;
@@ -529,58 +495,58 @@ button {
   height: 2.5em;
   border: 1px solid #000;
   font-weight: bold;
-  margin: 2em 0em 0em 33em;
-}
-/*price-list*/
+  margin: 2em 0em 0em 33em; }
 
+/*price-list*/
 .price-container {
   background-image: url("/images/carrots.jpg");
-  position: relative;
-}
-.price-container:before{
+  position: relative; }
+  .price-container::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5);
-}
+    background: #000;
+    opacity: 0.5; }
+
 .price-subpage {
   position: relative;
   padding: 5em 3em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
+
 .price-item {
   flex: 0 1 40vw;
   margin: 3em 0em;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #fff;
+  border: 1px solid #000;
   align-items: center;
   text-align: center;
-  height: 68vh;
-}
+  height: 68vh; }
+
 .price-title {
   font-size: 2em;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   color: #43485e;
-  text-align: center;
-}
+  text-align: center; }
+
 .price-logo {
   color: #4fcb6b;
-  text-align: center;
-}
-.price-price{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-}
-.price-time{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-}
-.price-text{
- padding: 1em 2em;
-}
+  text-align: center; }
+
+.price-price {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold; }
+
+.price-time {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold; }
+
+.price-text {
+  padding: 1em 2em; }
+
+/*# sourceMappingURL=main.css.map */

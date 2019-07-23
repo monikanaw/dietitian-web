@@ -1,0 +1,43 @@
+// variables /
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #f1f1f3;
+$color-dark-gray: #5b5555;
+
+$font-rokkitt: 'Rokkitt', serif;
+$font-literata: 'Literata', serif;
+$font-pt: 'PT Sans', sans-serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$font-timesnewroma:'Times New Roma', sans-serif;
+
+$break-xs: 500px;
+$break-s: 720px;
+$break-m: 850px;
+$break-l: 1000px;
+
+// mixins /
+@mixin header {
+  min-height: 6vh;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  top: 0;
+  @content;
+}
+@mixin drop-down {
+  display: none;
+  position: absolute;
+  border-radius: 0px 0px 6px 6px;
+  @content;
+}
+@mixin efect-for-background {
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    @content;
+  }
+}
