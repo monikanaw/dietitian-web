@@ -18,7 +18,7 @@
   > li {
     display: inline-block;
     padding: 0.8em 1em;
-    @media (max-width: $break-xs){
+    @media #{$break-xs} {
       padding: 0.3em 0.4em;
       align-items: center;
       letter-spacing: 2px;
@@ -29,14 +29,14 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    @media (max-width: $break-xs){
+    @media #{$break-xs}{
      font-weight: 600;
     }
   }
   > li:last-child a {
     padding-right: 3em;
   }
-  @media (max-width: $break-xs){
+  @media #{$break-xs}{
     padding-right: 0em;
   }
 }
@@ -62,14 +62,14 @@ ul li {
    li {
     width: 190px;
     border-radius: 4px;
-    @media (max-width: $break-xs){
+    @media #{$break-xs}{
       width: 110px;
     }
    }
    li a {
      display: block;
      padding: 10px 14px;
-     @media (max-width: $break-xs){
+     @media #{$break-xs}{
        font-size: 1em;
        text-transform: capitalize;
        font-weight: 600;
@@ -98,7 +98,7 @@ ul li {
    width: 0;
    left: 8.3em;
    top: 1.3em;
-   @media (max-width: $break-xs){
+   @media #{$break-xs}{
      left: 8.7em;
      top: 0.7em;
    }
@@ -109,6 +109,15 @@ ul li {
   width: 100%;
   height: 21vh;
   background: $color-black;
+  @media #{$break-xs}{
+    height: 32vh;
+  }
+  @media #{$break-s}{
+    height: 28vh;
+  }
+  @media #{$break-m}{
+    height: 28vh;
+  }
   &-description {
     display: flex;
     top: 0em;
@@ -117,13 +126,29 @@ ul li {
     text-align: center;
     width: 90%;
     margin: 0 auto;
+    @media #{$break-s}{
+      width: 95%;
+    }
   }
   &-logo {
     flex: 0 1 28vw;
+    @media #{$break-xs}{
+      display: none;
+    }
+    @media #{$break-s}{
+      flex: 0 1 20vw;
+      margin-top: 2em;
+    }
+    @media #{$break-m}{
+      flex: 0 1 22vw;
+    }
     p {
       font-size: 1.5em;
       font-weight: bold;
       margin-top: 0.2em;
+      @media #{$break-s}{
+        font-size: 1em;
+      }
     }
     &-image{
       padding-top: 0.4em;

@@ -9,6 +9,21 @@
   left: 2.5em;
   font-size: 4em;
   text-transform: uppercase;
+  @media #{$break-xs} {
+    top: 2.5em;
+    left: 0.2em;
+    font-size: 2em;
+  }
+  @media #{$break-s} {
+    font-size: 2.3em;
+    top: 2.3em;
+    left: 0.3em;
+  }
+  @media #{$break-m} {
+    font-size: 2.5em;
+    top: 2em;
+    left: 2em;
+  }
 }
 .dietician-subpage-info {
   display: flex;
@@ -61,15 +76,44 @@
   position: absolute;
   font-size: 2em;
   top: 6em;
+  @media #{$break-xs} {
+    font-size: 1em;
+    top: 10em;
+    left: 0em;
+  }
+  @media #{$break-s} {
+    font-size: 1.2em;
+    top: 10em;
+  }
+  @media #{$break-m} {
+    font-size: 1.5em;
+    top: 7em;
+  }
 }
 .rachel-subtitle {
  left: 10em;
+ @media #{$break-xs} {
+   left: 0.2em;
+ }
 }
 .monica-subtitle, .joey-subtitle {
   left: 13em;
+  @media #{$break-xs} {
+    left: 0.2em;
+    top: 11em;
+  }
 }
 .phoebe-subtitle {
   left: 5.5em;
+  @media #{$break-xs} {
+    left: 0.2em;
+  }
+  @media #{$break-s} {
+    left: 1em;
+  }
+  @media #{$break-m} {
+    left: 3.2em;
+  }
 }
 /*contact*/
 .form {

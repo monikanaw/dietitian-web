@@ -10,10 +10,11 @@ $font-pt: 'PT Sans', sans-serif;
 $font-quicksand: 'Quicksand', sans-serif;
 $font-timesnewroma:'Times New Roma', sans-serif;
 
-$break-xs: 500px;
-$break-s: 720px;
-$break-m: 850px;
-$break-l: 1000px;
+$break-xs: "(min-width: 320px) and (max-width: 460px)";
+$break-s: "(min-width: 461px) and (max-width: 600px)";
+$break-m: "(min-width: 601px) and (max-width: 850px)";
+$break-l: "(min-width: 851px) and (max-width: 1060px)";
+$break-xl: "(min-width: 1061px) and (max-width: 1150px)";
 
 // mixins /
 @mixin header {
