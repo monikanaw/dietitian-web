@@ -647,6 +647,9 @@ ul li {
 .dietician-subpage-data {
   position: relative;
   height: 25vh; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .dietician-subpage-data {
+      height: 10vh; } }
 
 .dietician-subpage-title {
   position: absolute;
@@ -666,25 +669,44 @@ ul li {
       left: 0.3em; } }
   @media (min-width: 601px) and (max-width: 850px) {
     .dietician-subpage-title {
-      font-size: 2.5em;
-      top: 2em;
-      left: 2em; } }
+      font-size: 2.3em;
+      top: 2em; } }
 
 .dietician-subpage-info {
   display: flex;
   margin: 14em 2em 8em 2em;
-  justify-content: space-around;
-  align-items: flex-start; }
+  justify-content: space-around; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px) {
+    .dietician-subpage-info {
+      height: auto;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 14em 2em 2em 2em; } }
 
 .dietician-subpage-image {
   flex: 1;
   position: relative; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .dietician-subpage-image {
+      flex: 0 0 500px; } }
+  @media (min-width: 461px) and (max-width: 600px) {
+    .dietician-subpage-image {
+      flex: 0 0 600px; } }
 
 .photo-of-dietician-subpage {
   max-width: 30vw;
   height: 65vh;
   position: absolute;
   left: 3em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 601px) and (max-width: 850px) {
+    .photo-of-dietician-subpage {
+      height: 30vh;
+      max-width: 70vw; } }
+  @media (min-width: 461px) and (max-width: 600px), (min-width: 851px) and (max-width: 1060px) {
+    .photo-of-dietician-subpage {
+      height: 40vh;
+      max-width: 80vw; } }
 
 .dietician-subpage-icons {
   display: flex;
@@ -692,17 +714,38 @@ ul li {
   position: absolute;
   top: 28em;
   left: 3em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 601px) and (max-width: 850px) {
+    .dietician-subpage-icons {
+      top: 12em;
+      left: 3em;
+      margin-bottom: 1em; } }
+  @media (min-width: 461px) and (max-width: 600px), (min-width: 851px) and (max-width: 1060px) {
+    .dietician-subpage-icons {
+      top: 16em;
+      left: 3em;
+      margin-bottom: 1em; } }
 
 .icon-text-subpage-dietician {
   font-size: 2em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
+    .icon-text-subpage-dietician {
+      font-size: 1em; } }
+  @media (min-width: 851px) and (max-width: 1060px) {
+    .icon-text-subpage-dietician {
+      font-size: 1.4em; } }
 
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
+    .icon-subpage {
+      width: 1.5em;
+      height: 1.5em;
+      padding: 0.4em .5em .2em 0em; } }
   .icon-subpage-dietician {
     display: flex; }
     .icon-subpage-dietician p {
-      padding: 0.8em 2em 2em 0em; }
+      padding: 0em 2em 2em 0em; }
 
 .dietician-subpage-description {
   line-height: 1.4;
@@ -711,6 +754,20 @@ ul li {
   background-color: #fff;
   padding: 0.8em 3em 1.2em 3em;
   margin-top: 0; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px) {
+    .dietician-subpage-description {
+      font-size: 13px;
+      padding: 0.8em 0.2em 0.5em 0.2em;
+      flex: 0 1 auto;
+      margin: auto; } }
+  @media (min-width: 601px) and (max-width: 850px) {
+    .dietician-subpage-description {
+      flex-basis: 35vw;
+      font-size: 13px; } }
+  @media (min-width: 851px) and (max-width: 1060px) {
+    .dietician-subpage-description {
+      flex-basis: 35vw;
+      font-size: 16px; } }
 
 /* dietician-subtitle*/
 .dietician-subtitle {
