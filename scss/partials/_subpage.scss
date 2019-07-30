@@ -177,10 +177,23 @@
  width: 60vw;
  height: 100vh;
  margin: 6em 0em 0em 10em;
+ @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-xl} {
+   margin: 8em auto;
+   width: 95vw;
+   text-align: center;
+ }
+ @media #{$break-l} {
+   width: 95vw;
+ }
 }
 .title-form {
   font-size: 2em;
   margin-left: 0.7em;
+  @media #{$break-xs}, #{$break-s}, #{$break-m} {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 %input {
@@ -196,16 +209,29 @@
   @extend %input;
   width: 20vw;
   height: 6vh;
+  @media #{$break-xs}, #{$break-s}, #{$break-m} {
+    width: 70vw;
+  }
+  @media #{$break-l}, #{$break-xl} {
+    width: 32vw;
+  }
 }
 .input-second-line {
   @extend %input;
    width: 44vw;
    height: 6vh;
+    @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-xl} {
+     width: 70vw;
+   }
 }
 textarea {
   @extend %input;
-   width: 43vw;
+   width: 44vw;
    height: 24vh;
+   padding-top: 1em;
+   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-xl} {
+     width: 70vw;
+   }
 }
 button {
   background-color: $color-black;
@@ -215,53 +241,86 @@ button {
   border: 1px solid $color-black;
   font-weight: bold;
   margin: 2em 0em 0em 33em;
+  @media #{$break-xs}, #{$break-s}, #{$break-m} {
+    margin: 2em;
+  }
 }
 /*price-list*/
 
 .price-container {
-  background-image: url("/images/carrots.jpg");
-  position: relative;
-    @include efect-for-background {
-      background: $color-black;
-      opacity: 0.5;
-    }
+  background-image: radial-gradient(circle, #fff, #c6d8d8, #b0b2b2);;
 }
-
 .price-subpage {
   position: relative;
   padding: 5em 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media #{$break-xs} {
+    padding: 4em 2em;
+  }
+  @media #{$break-m} {
+    padding: 4em 2.5em;
+    justify-content: space-between;
+  }
 }
 .price-item {
   flex: 0 1 40vw;
   margin: 3em 0em;
   background-color: $color-white;
   border: 1px solid $color-black;
-  align-items: center;
   text-align: center;
-  height: 68vh;
+  height: auto;
+  @media #{$break-xs}, #{$break-s} {
+    flex: 1 1 90vw;
+  }
 }
-.price-title {
-  font-size: 2em;
+%price-font {
   font-family: $font-quicksand;
   font-weight: bold;
+}
+
+.price-title {
+  @extend %price-font;
+  font-size: 2em;
   color: #43485e;
   text-align: center;
+  @media #{$break-xs}, #{$break-s}, #{$break-m} {
+    font-size: 1.3em;
+  }
+  @media #{$break-xs} {
+    font-size: 1.6em;
+  }
 }
 .price-logo {
   color: #4fcb6b;
   text-align: center;
+  @media #{$break-xs}, #{$break-m}, #{$break-l} {
+    margin-top: -1em;
+  }
 }
 .price-price{
-  font-family: $font-quicksand;
-  font-weight: bold;
+  @extend %price-font;
+  @media #{$break-xs} {
+    font-weight: normal;
+  }
 }
 .price-time{
-  font-family: $font-quicksand;
-  font-weight: bold;
+  @extend %price-font;
+  @media #{$break-xs} {
+    font-weight: normal;
+  }
+  @media #{$break-l} {
+    margin-top: -1em;
+  }
 }
 .price-text{
  padding: 1em 2em;
+ @media #{$break-xs}, #{$break-m} {
+   padding: 0.5em 1em;
+   font-size: 0.8em;
+ }
+ @media #{$break-s}, #{$break-l} {
+   padding: 1em;
+ }
 }

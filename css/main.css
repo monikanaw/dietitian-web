@@ -818,10 +818,23 @@ ul li {
   width: 60vw;
   height: 100vh;
   margin: 6em 0em 0em 10em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px), (min-width: 851px) and (max-width: 1060px), (min-width: 1061px) and (max-width: 1150px) {
+    .form {
+      margin: 8em auto;
+      width: 95vw;
+      text-align: center; } }
+  @media (min-width: 851px) and (max-width: 1060px) {
+    .form {
+      width: 95vw; } }
 
 .title-form {
   font-size: 2em;
   margin-left: 0.7em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
+    .title-form {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; } }
 
 .input-first-line, .input-second-line, textarea {
   margin: 1em;
@@ -834,14 +847,27 @@ ul li {
 .input-first-line {
   width: 20vw;
   height: 6vh; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
+    .input-first-line {
+      width: 70vw; } }
+  @media (min-width: 851px) and (max-width: 1060px), (min-width: 1061px) and (max-width: 1150px) {
+    .input-first-line {
+      width: 32vw; } }
 
 .input-second-line {
   width: 44vw;
   height: 6vh; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px), (min-width: 851px) and (max-width: 1060px), (min-width: 1061px) and (max-width: 1150px) {
+    .input-second-line {
+      width: 70vw; } }
 
 textarea {
-  width: 43vw;
-  height: 24vh; }
+  width: 44vw;
+  height: 24vh;
+  padding-top: 1em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px), (min-width: 851px) and (max-width: 1060px), (min-width: 1061px) and (max-width: 1150px) {
+    textarea {
+      width: 70vw; } }
 
 button {
   background-color: #000;
@@ -851,20 +877,13 @@ button {
   border: 1px solid #000;
   font-weight: bold;
   margin: 2em 0em 0em 33em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
+    button {
+      margin: 2em; } }
 
 /*price-list*/
 .price-container {
-  background-image: url("/images/carrots.jpg");
-  position: relative; }
-  .price-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: #000;
-    opacity: 0.5; }
+  background-image: radial-gradient(circle, #fff, #c6d8d8, #b0b2b2); }
 
 .price-subpage {
   position: relative;
@@ -872,36 +891,66 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .price-subpage {
+      padding: 4em 2em; } }
+  @media (min-width: 601px) and (max-width: 850px) {
+    .price-subpage {
+      padding: 4em 2.5em;
+      justify-content: space-between; } }
 
 .price-item {
   flex: 0 1 40vw;
   margin: 3em 0em;
   background-color: #fff;
   border: 1px solid #000;
-  align-items: center;
   text-align: center;
-  height: 68vh; }
+  height: auto; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px) {
+    .price-item {
+      flex: 1 1 90vw; } }
+
+.price-title, .price-price, .price-time {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold; }
 
 .price-title {
   font-size: 2em;
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
   color: #43485e;
   text-align: center; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
+    .price-title {
+      font-size: 1.3em; } }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .price-title {
+      font-size: 1.6em; } }
 
 .price-logo {
   color: #4fcb6b;
   text-align: center; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 601px) and (max-width: 850px), (min-width: 851px) and (max-width: 1060px) {
+    .price-logo {
+      margin-top: -1em; } }
 
-.price-price {
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold; }
+@media (min-width: 320px) and (max-width: 460px) {
+  .price-price {
+    font-weight: normal; } }
 
-.price-time {
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold; }
+@media (min-width: 320px) and (max-width: 460px) {
+  .price-time {
+    font-weight: normal; } }
+@media (min-width: 851px) and (max-width: 1060px) {
+  .price-time {
+    margin-top: -1em; } }
 
 .price-text {
   padding: 1em 2em; }
+  @media (min-width: 320px) and (max-width: 460px), (min-width: 601px) and (max-width: 850px) {
+    .price-text {
+      padding: 0.5em 1em;
+      font-size: 0.8em; } }
+  @media (min-width: 461px) and (max-width: 600px), (min-width: 851px) and (max-width: 1060px) {
+    .price-text {
+      padding: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
