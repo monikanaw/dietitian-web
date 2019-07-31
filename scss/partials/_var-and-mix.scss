@@ -18,7 +18,7 @@ $break-xl: "(min-width: 1061px) and (max-width: 1150px)";
 
 // mixins /
 @mixin header {
-  min-height: 6vh;
+  height: auto;
   position: fixed;
   z-index: 10;
   width: 100vw;
@@ -26,7 +26,6 @@ $break-xl: "(min-width: 1061px) and (max-width: 1150px)";
   @content;
 }
 @mixin drop-down {
-  display: none;
   position: absolute;
   border-radius: 0px 0px 6px 6px;
   @content;

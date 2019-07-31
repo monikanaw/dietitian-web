@@ -18,7 +18,7 @@
   > li {
     display: inline-block;
     padding: 0.8em 1em;
-    @media #{$break-xs} {
+    @media #{$break-xs}{
       padding: 0.3em 0.4em;
       align-items: center;
       letter-spacing: 2px;
@@ -29,15 +29,9 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    @media #{$break-xs}{
-     font-weight: 600;
-    }
   }
   > li:last-child a {
     padding-right: 3em;
-  }
-  @media #{$break-xs}{
-    padding-right: 0em;
   }
 }
 
@@ -56,6 +50,13 @@ ul li {
       background-color: $color-black;
     }
   }
+}
+
+.hidden-drop-down-menu {
+  display: none;
+}
+.show-drop-down-menu {
+  display: block;
 }
 
 .drop-down {

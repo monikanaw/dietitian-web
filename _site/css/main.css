@@ -22,14 +22,14 @@ body {
 
 /* NAV */
 .header-nav {
-  min-height: 6vh;
+  height: auto;
   position: fixed;
   z-index: 10;
   width: 100vw;
   top: 0;
   background-color: transparent; }
   .header-nav-2 {
-    min-height: 6vh;
+    height: auto;
     position: fixed;
     z-index: 10;
     width: 100vw;
@@ -53,14 +53,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold; }
-    @media (min-width: 320px) and (max-width: 460px) {
-      .nav-bar a {
-        font-weight: 600; } }
   .nav-bar > li:last-child a {
     padding-right: 3em; }
-  @media (min-width: 320px) and (max-width: 460px) {
-    .nav-bar {
-      padding-right: 0em; } }
 
 /* dropdown menu */
 ul li {
@@ -68,15 +62,19 @@ ul li {
   display: inline-block; }
 
 .drop-down-menu {
-  display: none;
   position: absolute;
   border-radius: 0px 0px 6px 6px;
   background-color: transparent; }
   .drop-down-menu-2 {
-    display: none;
     position: absolute;
     border-radius: 0px 0px 6px 6px;
     background-color: #000; }
+
+.hidden-drop-down-menu {
+  display: none; }
+
+.show-drop-down-menu {
+  display: block; }
 
 .drop-down li {
   width: 190px;
@@ -193,53 +191,43 @@ ul li {
 .text {
   color: #fff;
   font-size: 5em;
-  text-align: center; }
-
-.main-logo {
-  position: relative;
-  top: 25vh; }
-  @media (min-width: 320px) and (max-width: 460px) {
-    .main-logo {
-      top: 33vh; } }
+  text-align: center;
+  line-height: 0.7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0em;
+  width: 100%; }
 
 .title-diet {
-  position: relative;
   font-family: "Rokkitt", serif;
   font-weight: bold;
-  font-size: 1.5em;
-  top: 12vh; }
+  font-size: 1.5em; }
   @media (min-width: 320px) and (max-width: 460px) {
     .title-diet {
-      font-size: 0.6em;
-      top: 27vh; } }
+      font-size: 0.6em; } }
   @media (min-width: 461px) and (max-width: 600px) {
     .title-diet {
-      font-size: 0.8em;
-      top: 24vh; } }
-  @media (min-width: 601px) and (max-width: 850px) {
-    .title-diet {
-      font-size: 1.2em; } }
+      font-size: 0.8em; } }
 
 .subtitle-diet {
-  position: relative;
   font-family: "Rokkitt", serif;
   font-style: italic;
-  font-size: 0.6em;
-  bottom: 7vh; }
+  font-size: 0.6em; }
   @media (min-width: 320px) and (max-width: 460px) {
     .subtitle-diet {
-      font-size: 0.4em;
-      top: 24vh; } }
+      font-size: 0.4em; } }
   @media (min-width: 461px) and (max-width: 600px) {
     .subtitle-diet {
-      font-size: 0.5em;
-      top: 10vh; } }
+      font-size: 0.5em; } }
 
 /* ABOUT US */
 .about-us {
   background-color: #fff;
   background-size: cover;
-  height: 85vh;
+  height: 75vh;
+  max-height: 500px;
   position: relative; }
   .about-us::before {
     content: '';
@@ -257,7 +245,6 @@ ul li {
 
 .about-text {
   font-size: 1.8em;
-  top: 10%;
   margin: auto 3em;
   top: 50%;
   transform: translateY(-50%);
@@ -276,7 +263,8 @@ ul li {
       line-height: normal; } }
   @media (min-width: 601px) and (max-width: 850px) {
     .about-text {
-      font-size: 1.5em; } }
+      font-size: 1.4em;
+      line-height: normal; } }
   .about-text p {
     font-weight: bold; }
 
@@ -288,6 +276,7 @@ ul li {
   background-image: url("/images/avocado.jpg");
   position: relative;
   height: 140vh;
+  max-height: 1050px;
   width: 100%; }
   .avocado::before {
     content: '';
@@ -298,60 +287,49 @@ ul li {
     bottom: 0;
     background: #000;
     opacity: 0.7; }
-  @media (min-width: 320px) and (max-width: 460px) {
-    .avocado {
-      height: 150vh; } }
-  @media (min-width: 461px) and (max-width: 600px) {
-    .avocado {
-      height: 160vh; } }
-  @media (min-width: 601px) and (max-width: 850px) {
-    .avocado {
-      height: 170vh; } }
   .avocado-items {
     position: absolute;
-    margin: 4em 3em 1em 3em; }
+    top: 50%;
+    transform: translateY(-50%); }
     @media (min-width: 320px) and (max-width: 460px) {
       .avocado-items {
-        margin: 1.5em auto 1em auto; } }
+        margin: auto; } }
     @media (min-width: 461px) and (max-width: 600px) {
       .avocado-items {
-        margin: 1.5em 1.5em 1em 1.5em; } }
+        margin: auto 1.5em; } }
     @media (min-width: 601px) and (max-width: 850px) {
       .avocado-items {
-        margin: 2em 2em 1em 2em; } }
+        margin: auto 2em; } }
+    @media (min-width: 851px) and (max-width: 1060px) {
+      .avocado-items {
+        margin: auto 4em; } }
 
 .diseases-text {
   color: #fff;
   font-size: 3.5em;
   font-weight: bold;
-  margin: 1em 2em 1.2em 2em; }
+  text-align: center;
+  max-width: 80%;
+  margin: 1em auto; }
   @media (min-width: 320px) and (max-width: 460px) {
     .diseases-text {
-      font-size: 1.8em;
-      margin-bottom: 1.5em; } }
+      font-size: 2.4em; } }
   @media (min-width: 461px) and (max-width: 600px) {
     .diseases-text {
-      font-size: 2.5em;
-      margin-bottom: 1.5em; } }
-  @media (min-width: 601px) and (max-width: 850px) {
-    .diseases-text {
-      font-size: 2.8em;
-      margin-bottom: 1em; } }
-  @media (min-width: 851px) and (max-width: 1060px) {
-    .diseases-text {
-      font-size: 3em;
-      margin-bottom: 1.2em; } }
+      font-size: 3em; } }
 
 .avocado-squares {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: auto; }
 
 .diseases-block {
   flex: 0 1 25vw;
   background-color: #fff;
   width: 25vw;
   height: 33vh;
+  max-height: 220px;
   border-radius: 12px;
   margin: 2em auto;
   display: flex; }
@@ -364,15 +342,15 @@ ul li {
   @media (min-width: 461px) and (max-width: 600px) {
     .diseases-block {
       flex: 1 1 40%;
-      margin: 0.5em 0.5em; } }
+      margin: 1em 0.5em; } }
   @media (min-width: 601px) and (max-width: 850px) {
     .diseases-block {
       flex: 1 1 36%;
-      margin: 0.8em 1.2em; } }
+      margin: 2em 1.2em; } }
   @media (min-width: 851px) and (max-width: 1060px) {
     .diseases-block {
       flex: 1 1 20%;
-      margin: 0.8em 1.2em; } }
+      margin: 2em 1.2em; } }
   .diseases-block p {
     color: #000;
     font-size: 1.4em;
@@ -392,6 +370,8 @@ ul li {
   .diseases-block img {
     flex: 0 0 25%;
     height: 38%;
+    max-height: 70px;
+    max-width: 70px;
     margin: 1em 0.2em auto 0.5em; }
     @media (min-width: 320px) and (max-width: 460px) {
       .diseases-block img {
@@ -426,15 +406,7 @@ ul li {
     max-width: 90%;
     margin: auto;
     padding-bottom: 5em; }
-    @media (min-width: 320px) and (max-width: 460px) {
-      .specialists-display {
-        flex-wrap: wrap;
-        justify-content: space-around; } }
-    @media (min-width: 461px) and (max-width: 600px) {
-      .specialists-display {
-        flex-wrap: wrap;
-        justify-content: space-around; } }
-    @media (min-width: 601px) and (max-width: 850px) {
+    @media (min-width: 320px) and (max-width: 460px), (min-width: 461px) and (max-width: 600px), (min-width: 601px) and (max-width: 850px) {
       .specialists-display {
         flex-wrap: wrap;
         justify-content: space-around; } }
@@ -461,12 +433,7 @@ ul li {
         width: 130px;
         height: 130px;
         border-radius: 70px; } }
-    @media (min-width: 601px) and (max-width: 850px) {
-      .dietitian img {
-        width: 180px;
-        height: 180px;
-        border-radius: 100px; } }
-    @media (min-width: 851px) and (max-width: 1060px) {
+    @media (min-width: 601px) and (max-width: 850px), (min-width: 851px) and (max-width: 1060px) {
       .dietitian img {
         width: 180px;
         height: 180px;

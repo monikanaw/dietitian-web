@@ -26,6 +26,10 @@ $(document).ready(function() {
     $('body').css('background', '#eeecec');
   }
 
+  $('#hoverDropDownMenu').click(function() {
+    $('.hidden-drop-down-menu').toggleClass('show-drop-down-menu');
+  });
+
    var map = L.map('map').setView([51.1110390,17.0347980], 18);
 
    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {

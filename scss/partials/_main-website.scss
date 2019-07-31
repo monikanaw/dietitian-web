@@ -14,55 +14,48 @@
 }
 
 .text {
-    color: $color-white;
-    font-size: 5em;
-    text-align: center;
+ color: $color-white;
+ font-size: 5em;
+ text-align: center;
+ line-height: 0.7;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ line-height: 0em;
+ width: 100%;
 }
-.main-logo {
-  position: relative;
-  top: 25vh;
-  @media #{$break-xs}{
-   top: 33vh;
-  }
-}
+
 .title-diet{
-  position: relative;
   font-family: $font-rokkitt;
   font-weight: bold;
   font-size: 1.5em;
-  top: 12vh;
+
   @media #{$break-xs}{
    font-size: 0.6em;
-   top: 27vh;
   }
   @media #{$break-s}{
    font-size: 0.8em;
-   top: 24vh;
   }
-  @media #{$break-m}{
-   font-size: 1.2em;
-  }
+
 }
 .subtitle-diet{
-    position: relative;
     font-family: $font-rokkitt;
     font-style: italic;
     font-size: 0.6em;
-    bottom: 7vh;
     @media #{$break-xs}{
      font-size: 0.4em;
-     top: 24vh;
     }
     @media #{$break-s}{
      font-size: 0.5em;
-     top: 10vh;
     }
 }
 /* ABOUT US */
 .about-us {
   background-color: $color-white;
   background-size: cover;
-  height: 85vh;
+  height: 75vh;
+  max-height: 500px;
   position: relative;
   @include efect-for-background {
   width: 100%;
@@ -76,7 +69,6 @@
 
 .about-text{
   font-size: 1.8em;
-  top: 10%;
   margin: auto 3em;
   top: 50%;
   transform: translateY(-50%);
@@ -94,7 +86,8 @@
    line-height: normal;
   }
   @media #{$break-m}{
-   font-size: 1.5em;
+   font-size: 1.4em;
+   line-height: normal;
   }
   p {
   font-weight: bold;
@@ -109,31 +102,27 @@
   background-image: url("/images/avocado.jpg");
   position: relative;
   height: 140vh;
+  max-height: 1050px;
   width: 100%;
   @include efect-for-background {
   background: $color-black;
   opacity: 0.7;
   }
-  @media #{$break-xs}{
-   height: 150vh;
-  }
-  @media #{$break-s}{
-   height: 160vh;
-  }
-  @media #{$break-m}{
-   height: 170vh;
-  }
   &-items{
   position: absolute;
-  margin: 4em 3em 1em 3em;
+  top: 50%;
+   transform: translateY(-50%);
   @media #{$break-xs}{
-    margin: 1.5em auto 1em auto;
+    margin: auto;
   }
   @media #{$break-s}{
-    margin: 1.5em 1.5em 1em 1.5em;
+    margin: auto 1.5em;
   }
   @media #{$break-m}{
-    margin: 2em 2em 1em 2em;
+    margin: auto 2em;
+  }
+  @media #{$break-l}{
+    margin: auto 4em;
   }
   }
 }
@@ -142,34 +131,28 @@
   color: $color-white;
   font-size: 3.5em;
   font-weight: bold;
-  margin: 1em 2em 1.2em 2em;
+  text-align: center;
+  max-width: 80%;
+  margin: 1em auto;
   @media #{$break-xs}{
-   font-size: 1.8em;
-   margin-bottom: 1.5em;
+   font-size: 2.4em;
   }
   @media #{$break-s}{
-   font-size: 2.5em;
-   margin-bottom: 1.5em;
-  }
-  @media #{$break-m}{
-   font-size: 2.8em;
-   margin-bottom: 1em;
-  }
-  @media #{$break-l}{
    font-size: 3em;
-   margin-bottom: 1.2em;
   }
 }
 .avocado-squares{
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 .diseases-block {
   flex: 0 1 25vw;
   background-color: $color-white;
   width: 25vw;
   height: 33vh;
+  max-height: 220px;
   border-radius: 12px;
   margin: 2em auto;
   display: flex;
@@ -181,15 +164,15 @@
   }
   @media #{$break-s}{
    flex: 1 1 40%;
-   margin: 0.5em 0.5em;
+   margin: 1em 0.5em;
   }
   @media #{$break-m}{
    flex: 1 1 36%;
-   margin: 0.8em 1.2em;
+   margin: 2em 1.2em;
   }
   @media #{$break-l}{
    flex: 1 1 20%;
-   margin: 0.8em 1.2em;
+   margin: 2em 1.2em;
   }
   p {
   color: $color-black;
@@ -211,6 +194,8 @@
   img {
   flex: 0 0 25%;
   height: 38%;
+  max-height: 70px;
+  max-width: 70px;
   margin: 1em 0.2em auto 0.5em;
   @media #{$break-xs}{
     flex: 0 0 20%;
@@ -248,15 +233,7 @@
   max-width: 90%;
   margin: auto;
   padding-bottom: 5em;
-    @media #{$break-xs}{
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    @media #{$break-s}{
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    @media #{$break-m}{
+    @media #{$break-xs}, #{$break-s}, #{$break-m}{
       flex-wrap: wrap;
       justify-content: space-around;
     }
@@ -285,12 +262,7 @@
       height: 130px;
       border-radius: 70px;
     }
-    @media #{$break-m}{
-      width: 180px;
-      height: 180px;
-      border-radius: 100px;
-    }
-    @media #{$break-l}{
+    @media #{$break-m}, #{$break-l}{
       width: 180px;
       height: 180px;
       border-radius: 100px;
@@ -341,7 +313,6 @@
 .fab {
   margin: 0.4em;
 }
-
 
 /* above map */
 .address-info {
