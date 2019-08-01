@@ -1,42 +1,45 @@
 /* common style for dietician-subpage */
 .dietician-subpage-data {
-  position:relative;
   height: 25vh;
+  margin-top: 4em;
   @media #{$break-xs} {
     height: 10vh;
   }
 }
 .dietician-subpage-title {
   position: absolute;
-  top: 1em;
-  left: 2.5em;
+  // top: 1em;
+  // left: 2.5em;
   font-size: 4em;
   text-transform: uppercase;
   @media #{$break-xs} {
-    top: 2.5em;
-    left: 0.2em;
+    // top: 2.5em;
+    // left: 0.2em;
     font-size: 2em;
   }
   @media #{$break-s}{
     font-size: 2.3em;
-    top: 2.3em;
-    left: 0.3em;
+    // top: 2.3em;
+    // left: 0.3em;
   }
-  @media #{$break-m}{
+  @media #{$break-m}, #{$break-l} {
     font-size: 2.3em;
-    top: 2em;
+    // top: 4em;
   }
 }
 .dietician-subpage-info {
   display: flex;
   margin: 14em 2em 8em 2em;
   justify-content: space-around;
-  @media #{$break-xs}, #{$break-s} {
-   height: auto;
+  min-height: 100vh;
+  @media #{$break-xs}, #{$break-s}, #{$break-m} {
    flex-direction: column;
    justify-content: space-between;
    flex-wrap: wrap;
-   margin: 14em 2em 2em 2em;
+   margin: 12em 2em 2em 2em;
+  }
+  @media #{$break-m}, #{$break-l} {
+   margin: 6em 2em 2em 2em;
   }
 }
 .dietician-subpage-image{
@@ -45,7 +48,7 @@
   @media #{$break-xs} {
     flex: 0 0 500px;
   }
-  @media #{$break-s} {
+  @media #{$break-s}, #{$break-m} {
     flex: 0 0 600px;
   }
 }
@@ -70,7 +73,7 @@
   top: 28em;
   left: 3em;
   @media #{$break-xs}, #{$break-m}{
-   top: 12em;
+   top: 15em;
    left: 3em;
    margin-bottom: 1em;
   }
@@ -132,62 +135,36 @@
 .dietician-subtitle {
   position: absolute;
   font-size: 2em;
-  top: 6em;
+  // top: 6em;
   @media #{$break-xs} {
     font-size: 1em;
-    top: 10em;
-    left: 0em;
+    // top: 10em;
   }
   @media #{$break-s} {
     font-size: 1.2em;
-    top: 10em;
+    // top: 10em;
   }
   @media #{$break-m} {
     font-size: 1.5em;
-    top: 7em;
+    // top: 9em;
   }
 }
-.rachel-subtitle {
- left: 10em;
- @media #{$break-xs} {
-   left: 0.2em;
- }
-}
-.monica-subtitle, .joey-subtitle {
-  left: 13em;
-  @media #{$break-xs} {
-    left: 0.2em;
-    top: 11em;
-  }
-}
-.phoebe-subtitle {
-  left: 5.5em;
-  @media #{$break-xs} {
-    left: 0.2em;
-  }
-  @media #{$break-s} {
-    left: 1em;
-  }
-  @media #{$break-m} {
-    left: 3.2em;
-  }
-}
+
 /*contact*/
+.form-container {
+  min-height: 100vh;
+}
 .form {
- width: 60vw;
- height: 100vh;
- margin: 6em 0em 0em 10em;
- @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-xl} {
+  margin: 15em auto;
+  width: 95vw;
+  text-align: center;
+  height: auto;
+  @media #{$break-xs}, #{$break-s} {
    margin: 8em auto;
-   width: 95vw;
-   text-align: center;
- }
- @media #{$break-l} {
-   width: 95vw;
- }
+  }
 }
 .title-form {
-  font-size: 2em;
+  font-size: 3em;
   margin-left: 0.7em;
   @media #{$break-xs}, #{$break-s}, #{$break-m} {
     margin-left: auto;
@@ -209,19 +186,29 @@
   @extend %input;
   width: 20vw;
   height: 6vh;
+  max-height: 45px;
   @media #{$break-xs}, #{$break-s}, #{$break-m} {
     width: 70vw;
   }
-  @media #{$break-l}, #{$break-xl} {
+  @media #{$break-l}{
     width: 32vw;
+  }
+  @media #{$break-sm2}, #{$break-l2}{
+  width: 26vw;
+  height: 10vh;
   }
 }
 .input-second-line {
   @extend %input;
    width: 44vw;
-   height: 6vh;
-    @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-xl} {
+   height: 10vh;
+   max-height: 45px;
+    @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}{
      width: 70vw;
+   }
+   @media #{$break-sm2}, #{$break-l2}{
+   width: 60vw;
+   height: 9vh;
    }
 }
 textarea {
@@ -229,8 +216,12 @@ textarea {
    width: 44vw;
    height: 24vh;
    padding-top: 1em;
-   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-xl} {
+   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l} {
      width: 70vw;
+   }
+   @media #{$break-sm2}, #{$break-l2}{
+   width: 60vw;
+   height: 40vh;
    }
 }
 button {
@@ -240,9 +231,9 @@ button {
   height: 2.5em;
   border: 1px solid $color-black;
   font-weight: bold;
-  margin: 2em 0em 0em 33em;
-  @media #{$break-xs}, #{$break-s}, #{$break-m} {
-    margin: 2em;
+  margin: 2em 0em auto 33em;
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}, #{$break-l2} {
+    margin: 2em 2em auto 2em;
   }
 }
 /*price-list*/

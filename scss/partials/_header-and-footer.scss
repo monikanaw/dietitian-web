@@ -108,17 +108,9 @@ ul li {
 /* footer */
 .footer {
   width: 100%;
-  height: 21vh;
+  height: auto;
   background: $color-black;
-  @media #{$break-xs}{
-    height: 32vh;
-  }
-  @media #{$break-s}{
-    height: 28vh;
-  }
-  @media #{$break-m}{
-    height: 28vh;
-  }
+
   &-description {
     display: flex;
     top: 0em;
