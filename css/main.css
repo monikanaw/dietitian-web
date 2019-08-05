@@ -201,7 +201,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .title-diet {
       font-size: 0.6em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .title-diet {
       font-size: 0.8em; } }
 
@@ -601,16 +601,18 @@ ul li {
     max-width: 40vw; }
   .address-contact p {
     font-size: 0.8em;
-    font-weight: 700; }
+    font-weight: 700;
+    padding-left: 1.5em; }
 
 .images-contact {
   height: 2.5rem;
   width: 2.5rem;
-  padding: 0.7em 1em 0em 0em; }
+  padding: 0.7em 0em 0em 0.5em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .images-contact {
-      height: 1.2rem;
-      width: 1.2rem; } }
+      height: 1.5rem;
+      width: 1.5em;
+      padding-right: 0.5em; } }
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .images-contact {
       height: 2rem;
@@ -624,14 +626,20 @@ ul li {
 
 /* common style for dietician-subpage */
 .dietician-subpage-data {
-  height: 25vh;
-  margin-top: 4em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
+  position: absolute;
+  text-align: center;
+  top: 4em;
+  left: 13vw;
+  margin-bottom: 4em; }
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .dietician-subpage-data {
-      height: 10vh; } }
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0; } }
 
 .dietician-subpage-title {
-  position: absolute;
   font-size: 4em;
   text-transform: uppercase; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
@@ -640,48 +648,67 @@ ul li {
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .dietician-subpage-title {
       font-size: 2.3em; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .dietician-subpage-title {
       font-size: 2.3em; } }
 
+.dietician-subtitle {
+  font-size: 2em; }
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
+    .dietician-subtitle {
+      font-size: 1em; } }
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
+    .dietician-subtitle {
+      font-size: 1.2em; } }
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    .dietician-subtitle {
+      font-size: 1.5em; } }
+
+/* */
 .dietician-subpage-info {
   display: flex;
-  margin: 14em 2em 8em 2em;
+  margin: 25em 2em 8em 2em;
   justify-content: space-around;
   min-height: 100vh; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .dietician-subpage-info {
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      margin: 12em 2em 2em 2em; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
-    .dietician-subpage-info {
-      margin: 6em 2em 2em 2em; } }
+      margin: 15em 2em 2em 2em; } }
 
 .dietician-subpage-image {
   flex: 1;
   position: relative; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .dietician-subpage-image {
-      flex: 0 0 500px; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
-    .dietician-subpage-image {
       flex: 0 0 600px; } }
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+    .dietician-subpage-image {
+      flex: 0 0 700px; } }
 
 .photo-of-dietician-subpage {
   max-width: 30vw;
   height: 65vh;
   position: absolute;
   left: 3em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .photo-of-dietician-subpage {
       height: 30vh;
-      max-width: 70vw; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
+      max-width: 75vw;
+      margin-bottom: 2vh; } }
+  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .photo-of-dietician-subpage {
-      height: 40vh;
-      max-width: 80vw; } }
+      height: 80vh;
+      max-width: 80vw;
+      margin-bottom: 2vh; } }
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
+    .photo-of-dietician-subpage {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0; } }
 
 .dietician-subpage-icons {
   display: flex;
@@ -689,22 +716,24 @@ ul li {
   position: absolute;
   top: 28em;
   left: 3em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .dietician-subpage-icons {
       top: 15em;
-      left: 3em;
-      margin-bottom: 1em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
+      position: absolute;
+      margin-top: 1vh; } }
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .dietician-subpage-icons {
-      top: 16em;
-      left: 3em;
-      margin-bottom: 1em; } }
+      top: 23em;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); } }
 
 .icon-text-subpage-dietician {
   font-size: 2em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .icon-text-subpage-dietician {
-      font-size: 1em; } }
+      font-size: 1em;
+      margin-top: 2em; } }
   @media (min-width: 851px) and (max-width: 1060px) {
     .icon-text-subpage-dietician {
       font-size: 1.4em; } }
@@ -712,7 +741,7 @@ ul li {
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .icon-subpage {
       width: 1.5em;
       height: 1.5em;
@@ -735,7 +764,7 @@ ul li {
       padding: 0.8em 0.2em 0.5em 0.2em;
       flex: 0 1 auto;
       margin: auto; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
     .dietician-subpage-description {
       flex-basis: 35vw;
       font-size: 13px; } }
@@ -744,26 +773,12 @@ ul li {
       flex-basis: 35vw;
       font-size: 16px; } }
 
-/* dietician-subtitle*/
-.dietician-subtitle {
-  position: absolute;
-  font-size: 2em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
-    .dietician-subtitle {
-      font-size: 1em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
-    .dietician-subtitle {
-      font-size: 1.2em; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
-    .dietician-subtitle {
-      font-size: 1.5em; } }
-
 /*contact*/
 .form-container {
   min-height: 100vh; }
 
 .form {
-  margin: 15em auto;
+  margin: 10em auto;
   width: 95vw;
   text-align: center;
   height: auto; }
@@ -780,40 +795,26 @@ ul li {
       margin-right: auto;
       text-align: center; } }
 
-.input-first-line, .input-second-line, textarea {
+.input-line, textarea {
   margin: 1em;
   background-color: #f1f1f3;
   border: none;
   font-size: 1em;
   padding-left: 1em;
+  padding-right: 1em;
   font-family: "Times New Roma", sans-serif; }
 
-.input-first-line {
-  width: 20vw;
-  height: 6vh;
-  max-height: 45px; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
-    .input-first-line {
-      width: 70vw; } }
-  @media (min-width: 851px) and (max-width: 1060px) {
-    .input-first-line {
-      width: 32vw; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
-    .input-first-line {
-      width: 26vw;
-      height: 10vh; } }
-
-.input-second-line {
+.input-line {
   width: 44vw;
   height: 10vh;
   max-height: 45px; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
-    .input-second-line {
+    .input-line {
       width: 70vw; } }
   @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
-    .input-second-line {
+    .input-line {
       width: 60vw;
-      height: 9vh; } }
+      height: 10vh; } }
 
 textarea {
   width: 44vw;
@@ -834,7 +835,7 @@ button {
   height: 2.5em;
   border: 1px solid #000;
   font-weight: bold;
-  margin: 2em 0em auto 33em; }
+  margin: 2em 0em 5em 33em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     button {
       margin: 2em 2em auto 2em; } }

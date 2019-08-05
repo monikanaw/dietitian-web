@@ -17,6 +17,7 @@ $break-sm2: "(min-width: 461px) and (max-width: 840px) and (orientation: landsca
 $break-l: "(min-width: 851px) and (max-width: 1060px)";
 $break-l2: "(min-width: 840px) and (max-width: 920px) and (orientation: landscape)";
 $break-xl: "(min-width: 1061px)";
+$break-xl2: "(min-width: 921px) and (max-width: 1300px) and (orientation: landscape)";
 
 // mixins /
 @mixin header {

@@ -1,55 +1,65 @@
 /* common style for dietician-subpage */
 .dietician-subpage-data {
-  height: 25vh;
-  margin-top: 4em;
-  @media #{$break-xs} {
-    height: 10vh;
+  position: absolute;
+  text-align: center;
+  top: 4em;
+  left: 13vw;
+  margin-bottom: 4em;
+  @media #{$break-xs}, #{$break-s} {
+   position: absolute;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
   }
 }
 .dietician-subpage-title {
-  position: absolute;
-  // top: 1em;
-  // left: 2.5em;
   font-size: 4em;
   text-transform: uppercase;
   @media #{$break-xs} {
-    // top: 2.5em;
-    // left: 0.2em;
     font-size: 2em;
   }
   @media #{$break-s}{
     font-size: 2.3em;
-    // top: 2.3em;
-    // left: 0.3em;
   }
-  @media #{$break-m}, #{$break-l} {
+  @media #{$break-m}, #{$break-l}, #{$break-sm2}, #{$break-l2} {
     font-size: 2.3em;
-    // top: 4em;
   }
 }
+.dietician-subtitle {
+  font-size: 2em;
+  @media #{$break-xs} {
+    font-size: 1em;
+  }
+  @media #{$break-s} {
+    font-size: 1.2em;
+  }
+  @media #{$break-m}, #{$break-sm2}, #{$break-l2} {
+    font-size: 1.5em;
+  }
+}
+
+/* */
 .dietician-subpage-info {
   display: flex;
-  margin: 14em 2em 8em 2em;
+  margin: 25em 2em 8em 2em;
   justify-content: space-around;
   min-height: 100vh;
-  @media #{$break-xs}, #{$break-s}, #{$break-m} {
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}{
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: center;
    flex-wrap: wrap;
-   margin: 12em 2em 2em 2em;
-  }
-  @media #{$break-m}, #{$break-l} {
-   margin: 6em 2em 2em 2em;
+   margin: 15em 2em 2em 2em;
   }
 }
 .dietician-subpage-image{
   flex: 1;
   position: relative;
-  @media #{$break-xs} {
-    flex: 0 0 500px;
-  }
-  @media #{$break-s}, #{$break-m} {
+  @media #{$break-xs}{
     flex: 0 0 600px;
+  }
+  @media #{$break-s}, #{$break-m}, #{$break-sm2}{
+    flex: 0 0 700px;
   }
 }
 .photo-of-dietician-subpage {
@@ -57,13 +67,22 @@
   height: 65vh;
   position: absolute;
   left: 3em;
-  @media #{$break-xs}, #{$break-m} {
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-sm2}{
     height: 30vh;
-    max-width: 70vw;
+    max-width: 75vw;
+    margin-bottom: 2vh;
   }
-  @media #{$break-s}, #{$break-l} {
-    height: 40vh;
+  @media #{$break-sm2}{
+    height: 80vh;
     max-width: 80vw;
+    margin-bottom: 2vh;
+  }
+  @media #{$break-m}, #{$break-sm2}, #{$break-s} {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
   }
 }
 .dietician-subpage-icons {
@@ -72,21 +91,23 @@
   position: absolute;
   top: 28em;
   left: 3em;
-  @media #{$break-xs}, #{$break-m}{
+  @media #{$break-xs}{
    top: 15em;
-   left: 3em;
-   margin-bottom: 1em;
+   position: absolute;
+   margin-top: 1vh;
   }
-  @media #{$break-s}, #{$break-l} {
-   top: 16em;
-   left: 3em;
-   margin-bottom: 1em;
+  @media #{$break-m}, #{$break-s}, #{$break-sm2}{
+   top: 23em;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
   }
 }
 .icon-text-subpage-dietician {
  font-size: 2em;
- @media #{$break-xs}, #{$break-s}, #{$break-m} {
+ @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2} {
   font-size: 1em;
+  margin-top: 2em;
  }
  @media #{$break-l} {
   font-size: 1.4em;
@@ -96,7 +117,7 @@
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em;
-  @media #{$break-xs}, #{$break-s}, #{$break-m} {
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2} {
     width: 1.5em;
     height: 1.5em;
     padding: 0.4em .5em .2em 0em;
@@ -122,7 +143,7 @@
    flex: 0 1 auto;
    margin: auto;
   }
-  @media #{$break-m}{
+  @media #{$break-m}, #{$break-sm2}{
    flex-basis: 35vw;
    font-size: 13px;
   }
@@ -131,31 +152,13 @@
    font-size: 16px;
   }
 }
-/* dietician-subtitle*/
-.dietician-subtitle {
-  position: absolute;
-  font-size: 2em;
-  // top: 6em;
-  @media #{$break-xs} {
-    font-size: 1em;
-    // top: 10em;
-  }
-  @media #{$break-s} {
-    font-size: 1.2em;
-    // top: 10em;
-  }
-  @media #{$break-m} {
-    font-size: 1.5em;
-    // top: 9em;
-  }
-}
 
 /*contact*/
 .form-container {
   min-height: 100vh;
 }
 .form {
-  margin: 15em auto;
+  margin: 10em auto;
   width: 95vw;
   text-align: center;
   height: auto;
@@ -179,26 +182,11 @@
   border: none;
   font-size: 1em;
   padding-left: 1em;
+  padding-right: 1em;
   font-family: $font-timesnewroma;
 }
 
-.input-first-line {
-  @extend %input;
-  width: 20vw;
-  height: 6vh;
-  max-height: 45px;
-  @media #{$break-xs}, #{$break-s}, #{$break-m} {
-    width: 70vw;
-  }
-  @media #{$break-l}{
-    width: 32vw;
-  }
-  @media #{$break-sm2}, #{$break-l2}{
-  width: 26vw;
-  height: 10vh;
-  }
-}
-.input-second-line {
+.input-line {
   @extend %input;
    width: 44vw;
    height: 10vh;
@@ -208,7 +196,7 @@
    }
    @media #{$break-sm2}, #{$break-l2}{
    width: 60vw;
-   height: 9vh;
+   height: 10vh;
    }
 }
 textarea {
@@ -231,7 +219,7 @@ button {
   height: 2.5em;
   border: 1px solid $color-black;
   font-weight: bold;
-  margin: 2em 0em auto 33em;
+  margin: 2em 0em 5em 33em;
   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}, #{$break-l2} {
     margin: 2em 2em auto 2em;
   }
