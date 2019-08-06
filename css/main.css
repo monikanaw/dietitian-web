@@ -169,7 +169,7 @@ ul li {
   background-attachment: fixed;
   position: relative;
   height: 100vh; }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .image {
       height: 150vh; } }
   .image::before {
@@ -201,7 +201,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .title-diet {
       font-size: 0.6em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .title-diet {
       font-size: 0.8em; } }
 
@@ -212,7 +212,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .subtitle-diet {
       font-size: 0.4em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .subtitle-diet {
       font-size: 0.5em; } }
 
@@ -223,7 +223,7 @@ ul li {
   height: 75vh;
   max-height: 500px;
   position: relative; }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .about-us {
       height: 100vh;
       max-height: 740px; } }
@@ -255,7 +255,7 @@ ul li {
     .about-text {
       font-size: 1.1em;
       line-height: normal; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .about-text {
       font-size: 1.3em;
       line-height: normal; } }
@@ -276,7 +276,7 @@ ul li {
   height: 140vh;
   max-height: 1050px;
   width: 100%; }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .avocado {
       height: 210vh; } }
   .avocado::before {
@@ -295,7 +295,7 @@ ul li {
     @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
       .avocado-items {
         margin: auto; } }
-    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
       .avocado-items {
         margin: auto 1.5em; } }
     @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
@@ -312,13 +312,13 @@ ul li {
   text-align: center;
   max-width: 80%;
   margin: 1em auto; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .diseases-text {
       font-size: 2.4em; } }
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .diseases-text {
       font-size: 3em; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .diseases-text {
       margin-top: 2em;
       margin-bottom: auto; } }
@@ -328,7 +328,7 @@ ul li {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto; }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .avocado-squares {
       justify-content: space-around; } }
 
@@ -351,7 +351,7 @@ ul li {
     .diseases-block {
       flex: 1 1 40%;
       margin: 1em 0.5em; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .diseases-block {
       flex: 1 1 36%;
       margin: 2em 1.2em; } }
@@ -359,7 +359,7 @@ ul li {
     .diseases-block {
       flex: 1 1 20%;
       margin: 2em 1.2em; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .diseases-block {
       height: 40vh;
       max-width: 260px; } }
@@ -370,7 +370,7 @@ ul li {
     @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
       .diseases-block p {
         font-size: 0.8em; } }
-    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
       .diseases-block p {
         font-size: 1em; } }
     @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
@@ -407,7 +407,7 @@ ul li {
       .specialists h2 {
         font-size: 2em;
         border-bottom: none; } }
-    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
       .specialists h2 {
         font-size: 2.2em; } }
     @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
@@ -418,7 +418,7 @@ ul li {
     max-width: 90%;
     margin: auto;
     padding-bottom: 5em; }
-    @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
       .specialists-display {
         flex-wrap: wrap;
         justify-content: space-around; } }
@@ -440,7 +440,7 @@ ul li {
         width: 100px;
         height: 100px;
         border-radius: 60px; } }
-    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
       .dietitian img {
         width: 130px;
         height: 130px;
@@ -467,7 +467,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .name {
       font-size: 1em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .name {
       font-size: 1.1em; } }
 
@@ -481,7 +481,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .occupation {
       font-size: 0.8em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .occupation {
       font-size: 0.9em; } }
 
@@ -508,7 +508,7 @@ ul li {
 .address-text {
   display: flex;
   margin: 0em 3em 3em 3em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .address-text {
       flex-direction: column;
       margin: 0em; } }
@@ -523,7 +523,7 @@ ul li {
       font-size: 1em;
       line-height: normal;
       padding: 0em 1.5em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .adress-paragraph {
       font-size: 1.2em;
       line-height: normal;
@@ -540,7 +540,7 @@ ul li {
       .adress-paragraph > p {
         font-size: 1.4em;
         line-height: normal; } }
-    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+    @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
       .adress-paragraph > p {
         font-size: 1.6em;
         line-height: normal; } }
@@ -557,7 +557,7 @@ ul li {
     @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
       .adress-paragraph-for-image {
         flex: 1 1 80%; } }
-    @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+    @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
       .adress-paragraph-for-image {
         flex: 1 1 75%; } }
     @media (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
@@ -583,7 +583,7 @@ ul li {
       width: 75vw;
       margin-top: -1em;
       margin-bottom: 2em; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .image-office {
       width: 65vw;
       margin-top: -3em;
@@ -613,7 +613,7 @@ ul li {
       height: 1.5rem;
       width: 1.5em;
       padding-right: 0.5em; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .images-contact {
       height: 2rem;
       width: 2rem; } }
@@ -648,7 +648,7 @@ ul li {
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .dietician-subpage-title {
       font-size: 2.3em; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .dietician-subpage-title {
       font-size: 2.3em; } }
 
@@ -660,22 +660,24 @@ ul li {
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .dietician-subtitle {
       font-size: 1.2em; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .dietician-subtitle {
       font-size: 1.5em; } }
 
 /* */
 .dietician-subpage-info {
   display: flex;
-  margin: 25em 2em 8em 2em;
-  justify-content: space-around;
-  min-height: 100vh; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  margin: 25em 10% 8em 10%;
+  min-height: 100vh;
+  justify-content: space-around; }
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .dietician-subpage-info {
       flex-direction: column;
       justify-content: center;
-      flex-wrap: wrap;
-      margin: 15em 2em 2em 2em; } }
+      margin: 15em auto 2em auto; } }
+  @media (min-width: 921px) and (max-width: 1300px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    .dietician-subpage-info {
+      margin: 25em 5% 8em 5%; } }
 
 .dietician-subpage-image {
   flex: 1;
@@ -683,54 +685,70 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .dietician-subpage-image {
       flex: 0 0 600px; } }
-  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .dietician-subpage-image {
       flex: 0 0 700px; } }
 
 .photo-of-dietician-subpage {
   max-width: 30vw;
   height: 65vh;
-  position: absolute;
-  left: 3em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  max-width: 350px;
+  max-height: 350px; }
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .photo-of-dietician-subpage {
       height: 30vh;
       max-width: 75vw;
-      margin-bottom: 2vh; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+      margin-bottom: 2vh;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0; } }
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .photo-of-dietician-subpage {
       height: 80vh;
       max-width: 80vw;
       margin-bottom: 2vh; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .photo-of-dietician-subpage {
       position: absolute;
       margin-left: auto;
       margin-right: auto;
       left: 0;
       right: 0; } }
+  @media (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    .photo-of-dietician-subpage {
+      height: 60vh;
+      max-width: 60vw;
+      margin: 0em 0em 2em 1.5em; } }
+  @media (min-width: 921px) and (max-width: 1300px) and (orientation: landscape) {
+    .photo-of-dietician-subpage {
+      height: 50vh;
+      max-width: 45vw; } }
 
 .dietician-subpage-icons {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 28em;
-  left: 3em; }
+  top: 28em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .dietician-subpage-icons {
+      left: 50%;
+      transform: translatex(-50%);
       top: 15em;
-      position: absolute;
       margin-top: 1vh; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape), (min-width: 921px) and (max-width: 1300px) and (orientation: landscape) {
     .dietician-subpage-icons {
       top: 23em;
-      position: absolute;
       left: 50%;
       transform: translateX(-50%); } }
+  @media (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+    .dietician-subpage-icons {
+      font-size: 0.8em; } }
 
 .icon-text-subpage-dietician {
   font-size: 2em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .icon-text-subpage-dietician {
       font-size: 1em;
       margin-top: 2em; } }
@@ -741,7 +759,7 @@ ul li {
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .icon-subpage {
       width: 1.5em;
       height: 1.5em;
@@ -757,21 +775,26 @@ ul li {
   font-size: 20px;
   background-color: #fff;
   padding: 0.8em 3em 1.2em 3em;
-  margin-top: 0; }
+  margin-top: 0;
+  max-width: 400px; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
     .dietician-subpage-description {
       font-size: 13px;
       padding: 0.8em 0.2em 0.5em 0.2em;
       flex: 0 1 auto;
-      margin: auto; } }
-  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape) {
+      margin: auto 2em; } }
+  @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .dietician-subpage-description {
       flex-basis: 35vw;
-      font-size: 13px; } }
+      font-size: 13px;
+      max-width: none;
+      margin: auto 4em; } }
   @media (min-width: 851px) and (max-width: 1060px) {
     .dietician-subpage-description {
       flex-basis: 35vw;
-      font-size: 16px; } }
+      font-size: 16px;
+      max-width: none;
+      margin: auto 4em; } }
 
 /*contact*/
 .form-container {
@@ -811,7 +834,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
     .input-line {
       width: 70vw; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .input-line {
       width: 60vw;
       height: 10vh; } }
@@ -823,7 +846,7 @@ textarea {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
     textarea {
       width: 70vw; } }
-  @media (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     textarea {
       width: 60vw;
       height: 40vh; } }
@@ -836,7 +859,7 @@ button {
   border: 1px solid #000;
   font-weight: bold;
   margin: 2em 0em 5em 33em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 840px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     button {
       margin: 2em 2em auto 2em; } }
 
