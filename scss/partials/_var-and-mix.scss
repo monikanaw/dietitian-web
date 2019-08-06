@@ -16,8 +16,9 @@ $break-m: "(min-width: 601px) and (max-width: 850px) and (orientation: portrait)
 $break-sm2: "(min-width: 461px) and (max-width: 839px) and (orientation: landscape)";
 $break-l: "(min-width: 851px) and (max-width: 1060px)";
 $break-l2: "(min-width: 840px) and (max-width: 920px) and (orientation: landscape)";
-$break-xl: "(min-width: 1061px)";
-$break-xl2: "(min-width: 921px) and (max-width: 1300px) and (orientation: landscape)";
+$break-xl: "(min-width: 1061px) and (max-width: 1200px) and (orientation: portrait)";
+$break-xl2: "(min-width: 921px) and (max-width: 1450px) and (orientation: landscape)";
+$break-xxxl: "(min-width: 1800px) and (max-width: 2000px)";
 
 // mixins /
 @mixin header {
@@ -43,4 +44,19 @@ $break-xl2: "(min-width: 921px) and (max-width: 1300px) and (orientation: landsc
     bottom: 0;
     @content;
   }
+}
+
+@mixin centering {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  @content;
+}
+
+@mixin translateX {
+  left: 50%;
+  transform: translateX(-50%);
+  @content;
 }
