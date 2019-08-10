@@ -1,6 +1,6 @@
 /* MAIN IMAGE + TITLE */
 .wrap {
-    width: 100%;
+  width: 100%;
 }
 .image {
   background-image: url("/images/blueberry.jpg");
@@ -18,41 +18,34 @@
 
 .text {
  @include translateXY{
- color: $color-white;
- font-size: 5em;
+ @include text($color: $color-white, $size: 5em, $l-height: 0);
  text-align: center;
- line-height: 0.7;
- line-height: 0em;
  width: 100%;
 }
 }
 
 .title-diet{
-  font-family: $font-rokkitt;
-  font-weight: bold;
-  font-size: 1.5em;
+  @include text($size: 1.5em, $family: $font-rokkitt, $weight: bold);
   @media #{$break-xs}{
-   font-size: 0.6em;
+    @include text($size: 0.6em);
   }
   @media #{$break-s}, #{$break-m}, #{$break-sm2}, #{$break-l2}{
-   font-size: 0.8em;
+    @include text($size: 0.8em);
   }
   @media #{$break-xxxl}{
-   font-size: 2em;
+    @include text($size: 2em);
   }
 }
 .subtitle-diet{
-    font-family: $font-rokkitt;
-    font-style: italic;
-    font-size: 0.6em;
+    @include text($size: 0.6em, $family: $font-rokkitt, $style: italic);
     @media #{$break-xs}{
-     font-size: 0.4em;
+      @include text($size: 0.4em);
     }
     @media #{$break-s}, #{$break-sm2}, #{$break-l2}{
-     font-size: 0.5em;
+      @include text($size: 0.4em);
     }
     @media #{$break-xxxl}{
-     font-size: 0.8em;
+      @include text($size: 0.8em);
     }
 }
 /* ABOUT US */
@@ -70,41 +63,36 @@
   width: 100%;
   height: 100%;
   background: $color-white;
-  transform-origin:top left;
+  transform-origin: top left;
   transform: skewY(2.5deg);
   z-index: 5;
   }
 }
 
 .about-text{
+  @include text($size: 1.8em, $family: $font-literata, $l-height: 1.6);
   @include translateXY{
-  font-size: 1.8em;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: $font-literata;
-  line-height: 1.6;
   position: absolute;
   z-index: 6;
   }
   @media #{$break-xs}{
-   font-size: 1.1em;
-   line-height: normal;
+    @include text($size: 1.1em, $l-height: normal);
   }
   @media #{$break-s}, #{$break-sm2}, #{$break-l2}{
-   font-size: 1.3em;
-   line-height: normal;
+   @include text($size: 1.3em, $l-height: normal);
   }
   @media #{$break-m}{
-   font-size: 1.4em;
-   line-height: normal;
+   @include text($size: 1.4em, $l-height: normal);
   }
   @media #{$break-xxxl}{
    max-width: 75vw;
   }
   p {
-  font-weight: bold;
+    @include text($weight: bold);
   }
 }
 
@@ -148,17 +136,15 @@
 }
 
 .diseases-text {
-  color: $color-white;
-  font-size: 3.5em;
-  font-weight: bold;
+  @include text($size: 3.5em, $color: $color-white, $weight: bold);
   text-align: center;
   max-width: 80%;
   margin: 1em auto;
   @media #{$break-xs}, #{$break-sm2}, #{$break-l2}{
-   font-size: 2.4em;
+   @include text($size: 2.4em);
   }
   @media #{$break-s}{
-   font-size: 3em;
+   @include text($size: 3em);
   }
   @media #{$break-sm2}, #{$break-l2}{
      margin-top: 2em;
@@ -203,20 +189,19 @@
    max-width: 260px;
   }
   p {
-  color: $color-black;
-  font-size: 1.4em;
+  @include text($size: 1.4em, $color: $color-black);
   margin: auto 0.2em;
   @media #{$break-xs}{
-   font-size: 0.8em;
+   @include text($size: 0.8em);
   }
   @media #{$break-s}, #{$break-sm2}, #{$break-l2}{
-   font-size: 1em;
+   @include text($size: 1em);
   }
   @media #{$break-m}{
-   font-size: 1.2em;
+   @include text($size: 1.2em);
   }
   @media #{$break-l}{
-   font-size: 1.2em;
+   @include text($size: 1.2em);
   }
   }
   img {
@@ -237,23 +222,21 @@
 .specialists {
   background-color: $color-white;
   h2 {
+  @include text($size: 3.5em, $weight: 600, $family: $font-pt);
   padding-top: 2.5em;
   text-align: center;
   margin: 0 auto 1em auto;
-  font-size: 3.5em;
   max-width: 35vw;
-  font-weight: 600;
   border-bottom: 2px solid $color-black;
-  font-family: $font-pt;
     @media #{$break-xs}{
-     font-size: 2em;
+     @include text($size: 2em);
      border-bottom: none;
     }
     @media #{$break-s}, #{$break-sm2}, #{$break-l2}{
-     font-size: 2.2em;
+     @include text($size: 2.2em);
     }
      @media #{$break-m}{
-      font-size: 2.3em;
+      @include text($size: 2.3em);
      }
   }
   &-display {
@@ -270,7 +253,7 @@
 
 .link-to-dietitian:link {
   text-decoration: none;
-  color: $color-black;
+  @include text($color: $color-black);
 }
 .dietitian {
   flex: 0 1 22vw;
@@ -299,36 +282,29 @@
 }
 
 .name {
-  font-size: 1.3em;
-  color: $color-black;
+  @include text($size: 1.3em, $weight: 400, $color: $color-black, $transform: uppercase);
   width: 100%;
-  font-weight: 400;
-  text-transform: uppercase;
   margin-top: 1em;
   @media #{$break-xs}{
-   font-size: 1em;
+    @include text($size: 1em);
   }
   @media #{$break-s}, #{$break-sm2}, #{$break-l2}{
-   font-size: 1.1em;
+   @include text($size: 1.1em);
   }
 }
 .occupation {
-  font-size: 1em;
-  color: $color-dark-gray;
+  @include text($size: 1em, $color: $color-dark-gray, $transform: uppercase, $family: $font-pt);
   margin-top:-0.5em;
-  text-transform: uppercase;
-  font-family: $font-pt;
   @media #{$break-xs}{
-   font-size: 0.8em;
+   @include text($size: 0.8em);
   }
    @media #{$break-s}, #{$break-sm2}, #{$break-l2}{
-    font-size: 0.9em;
+    @include text($size: 0.9em);
    }
 }
 .socialmedia {
-  color: $color-dark-gray;
+  @include text($color: $color-dark-gray, $family: $font-pt);
   margin-top: -0.2em;
-  font-family: $font-pt;
 }
 .fab {
   margin: 0.4em;
@@ -355,35 +331,27 @@
   }
 }
 .adress-paragraph {
-  font-size: 1.4em;
-  line-height: 1.4em;
+  @include text($size: 1.4em, $l-height: 1.4em);
   flex: 0 1 50vw;
   padding: 0em 3em 0em 2em;
   @media #{$break-xs}{
-   font-size: 1em;
-   line-height: normal;
-   padding: 0em 1.5em;
+    @include text($size: 1em, $l-height: normal);
+    padding: 0em 1.5em;
   }
   @media #{$break-s}, #{$break-sm2}{
-    font-size: 1.2em;
-    line-height: normal;
+    @include text($size: 1.2em, $l-height: normal);
     padding: 0.2em 1.5em;
   }
   > p{
-  font-weight: bold;
-  font-size: 2em;
+  @include text($size: 2em, $l-height: 1.2em, $family: $font-pt, $weight: bold);
   text-align: center;
   margin-right: 1em;
-  font-family: $font-pt;
-  line-height: 1.2em;
   max-width: 80%;
     @media #{$break-xs}{
-     font-size: 1.4em;
-     line-height: normal;
+      @include text($size: 1.4em, $l-height: normal);
     }
     @media #{$break-s}, #{$break-sm2}{
-     font-size: 1.6em;
-     line-height: normal;
+      @include text($size: 1.6em, $l-height: normal);
     }
     @media #{$break-l}{
      width: 100%;
@@ -443,8 +411,7 @@
   max-width: 40vw;
   }
   p {
-  font-size: 0.8em;
-  font-weight: 700;
+  @include text($size: 0.8em, $weight: 700);
   padding-left: 1.5em;
   }
 }

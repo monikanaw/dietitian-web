@@ -49,10 +49,10 @@ body {
         align-items: center;
         letter-spacing: 2px; } }
   .nav-bar a {
+    font-weight: bold;
     color: #fff;
-    text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold; }
+    text-decoration: none; }
   .nav-bar > li:last-child a {
     padding-right: 3em; }
 
@@ -88,8 +88,8 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .drop-down li a {
       font-size: 1em;
-      text-transform: capitalize;
       font-weight: 600;
+      text-transform: capitalize;
       padding: 4px 5px; } }
 .drop-down li a:hover {
   background-color: #6a5f5c;
@@ -121,9 +121,9 @@ ul li {
   height: auto;
   background: #000; }
   .footer-description {
+    color: #fff;
     display: flex;
     top: 0em;
-    color: #fff;
     justify-content: space-around;
     text-align: center;
     width: 90%;
@@ -145,6 +145,7 @@ ul li {
         flex: 0 1 22vw; } }
     .footer-logo p {
       font-size: 1.5em;
+      font-weight: bold;
       font-weight: bold;
       margin-top: 0.2em; }
       @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait) {
@@ -187,17 +188,16 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
   font-size: 5em;
+  line-height: 0;
+  color: #fff;
   text-align: center;
-  line-height: 0.7;
-  line-height: 0em;
   width: 100%; }
 
 .title-diet {
-  font-family: "Rokkitt", serif;
+  font-size: 1.5em;
   font-weight: bold;
-  font-size: 1.5em; }
+  font-family: "Rokkitt", serif; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .title-diet {
       font-size: 0.6em; } }
@@ -209,15 +209,15 @@ ul li {
       font-size: 2em; } }
 
 .subtitle-diet {
+  font-size: 0.6em;
   font-family: "Rokkitt", serif;
-  font-style: italic;
-  font-size: 0.6em; }
+  font-style: italic; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .subtitle-diet {
       font-size: 0.4em; } }
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .subtitle-diet {
-      font-size: 0.5em; } }
+      font-size: 0.4em; } }
   @media (min-width: 1800px) and (max-width: 2000px) {
     .subtitle-diet {
       font-size: 0.8em; } }
@@ -248,17 +248,17 @@ ul li {
     z-index: 5; }
 
 .about-text {
+  font-size: 1.8em;
+  line-height: 1.6;
+  font-family: "Literata", serif;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.8em;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: "Literata", serif;
-  line-height: 1.6;
   position: absolute;
   z-index: 6; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
@@ -322,9 +322,9 @@ ul li {
         margin: auto 10vw; } }
 
 .diseases-text {
-  color: #fff;
   font-size: 3.5em;
   font-weight: bold;
+  color: #fff;
   text-align: center;
   max-width: 80%;
   margin: 1em auto; }
@@ -381,8 +381,8 @@ ul li {
       height: 40vh;
       max-width: 260px; } }
   .diseases-block p {
-    color: #000;
     font-size: 1.4em;
+    color: #000;
     margin: auto 0.2em; }
     @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
       .diseases-block p {
@@ -412,14 +412,14 @@ ul li {
 .specialists {
   background-color: #fff; }
   .specialists h2 {
+    font-size: 3.5em;
+    font-weight: 600;
+    font-family: "PT Sans", sans-serif;
     padding-top: 2.5em;
     text-align: center;
     margin: 0 auto 1em auto;
-    font-size: 3.5em;
     max-width: 35vw;
-    font-weight: 600;
-    border-bottom: 2px solid #000;
-    font-family: "PT Sans", sans-serif; }
+    border-bottom: 2px solid #000; }
     @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
       .specialists h2 {
         font-size: 2em;
@@ -472,10 +472,10 @@ ul li {
 
 .name {
   font-size: 1.3em;
-  color: #000;
-  width: 100%;
   font-weight: 400;
+  color: #000;
   text-transform: uppercase;
+  width: 100%;
   margin-top: 1em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .name {
@@ -487,9 +487,9 @@ ul li {
 .occupation {
   font-size: 1em;
   color: #5b5555;
-  margin-top: -0.5em;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif; }
+  margin-top: -0.5em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .occupation {
       font-size: 0.8em; } }
@@ -499,8 +499,8 @@ ul li {
 
 .socialmedia {
   color: #5b5555;
-  margin-top: -0.2em;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  margin-top: -0.2em; }
 
 .fab {
   margin: 0.4em; }
@@ -540,12 +540,12 @@ ul li {
       line-height: normal;
       padding: 0.2em 1.5em; } }
   .adress-paragraph > p {
-    font-weight: bold;
     font-size: 2em;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
     text-align: center;
     margin-right: 1em;
-    font-family: "PT Sans", sans-serif;
-    line-height: 1.2em;
     max-width: 80%; }
     @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
       .adress-paragraph > p {
@@ -791,9 +791,9 @@ ul li {
       padding: 0em 2em 2em 0em; }
 
 .dietician-subpage-description {
-  line-height: 1.4;
-  flex: 0 0 42vw;
   font-size: 20px;
+  line-height: 1.4em;
+  flex: 0 0 42vw;
   background-color: #fff;
   padding: 0.8em 3em 1.2em 3em;
   margin-top: 0;
@@ -809,20 +809,20 @@ ul li {
       max-width: none; } }
   @media (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .dietician-subpage-description {
-      flex-basis: 35vw;
       font-size: 13px;
+      flex-basis: 35vw;
       max-width: none;
       margin: auto 4em; } }
   @media (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     .dietician-subpage-description {
-      flex-basis: 35vw;
       font-size: 13px;
+      flex-basis: 35vw;
       max-width: none;
       margin: auto 2vw; } }
   @media (min-width: 851px) and (max-width: 1060px) {
     .dietician-subpage-description {
-      flex-basis: 35vw;
       font-size: 16px;
+      flex-basis: 35vw;
       max-width: none; } }
   @media (min-width: 1800px) and (max-width: 2000px) {
     .dietician-subpage-description {
@@ -852,13 +852,13 @@ ul li {
       text-align: center; } }
 
 .input-line, textarea {
+  font-size: 1em;
+  font-family: "Times New Roma", sans-serif;
   margin: 1em;
   background-color: #f1f1f3;
   border: none;
-  font-size: 1em;
   padding-left: 1em;
-  padding-right: 1em;
-  font-family: "Times New Roma", sans-serif; }
+  padding-right: 1em; }
 
 .input-line {
   width: 44vw;
@@ -885,12 +885,12 @@ textarea {
       height: 40vh; } }
 
 button {
+  font-weight: bold;
   background-color: #000;
   color: #fff;
   width: 6em;
   height: 2.5em;
   border: 1px solid #000;
-  font-weight: bold;
   margin: 2em 0em 5em 33em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
     button {
@@ -927,8 +927,8 @@ button {
       flex: 1 1 90vw; } }
 
 .price-title, .price-price, .price-time {
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif; }
 
 .price-title {
   font-size: 2em;
@@ -963,8 +963,8 @@ button {
   padding: 1em 2em; }
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait) {
     .price-text {
-      padding: 0.5em 1em;
-      font-size: 0.8em; } }
+      font-size: 0.8em;
+      padding: 0.5em 1em; } }
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
     .price-text {
       padding: 1em; } }

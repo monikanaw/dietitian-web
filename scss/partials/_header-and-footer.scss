@@ -25,10 +25,8 @@
     }
   }
   a {
-    color: $color-white;
+    @include text($weight: bold, $color: $color-white, $transform: uppercase);
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
   }
   > li:last-child a {
     padding-right: 3em;
@@ -71,9 +69,7 @@ ul li {
      display: block;
      padding: 10px 14px;
      @media #{$break-xs}{
-       font-size: 1em;
-       text-transform: capitalize;
-       font-weight: 600;
+       @include text($size: 1em, $weight: 600, $transform: capitalize);
        padding: 4px 5px;
      }
    }
@@ -112,9 +108,9 @@ ul li {
   background: $color-black;
 
   &-description {
+    @include text($color: $color-white);
     display: flex;
     top: 0em;
-    color: $color-white;
     justify-content: space-around;
     text-align: center;
     width: 90%;
@@ -136,11 +132,11 @@ ul li {
       flex: 0 1 22vw;
     }
     p {
-      font-size: 1.5em;
+      @include text($size: 1.5em, $weight: bold);
       font-weight: bold;
       margin-top: 0.2em;
       @media #{$break-s}{
-        font-size: 1em;
+        @include text($size: 1em);
       }
     }
     &-image{
@@ -149,11 +145,11 @@ ul li {
   }
   &-address {
     order: -1;
-    font-weight: 600;
+    @include text($weight: 600);
   }
 }
 
 .social-block p {
   margin-top: 1em;
-  font-weight: 600;
+  @include text($weight: 600);
 }

@@ -10,28 +10,27 @@
   }
 }
 .dietician-subpage-title {
-  font-size: 4em;
-  text-transform: uppercase;
+  @include text($size: 4em, $transform: uppercase);
   @media #{$break-xs} {
-    font-size: 2em;
+    @include text($size: 2em);
   }
   @media #{$break-s}{
-    font-size: 2.3em;
+    @include text($size: 2.3em);
   }
   @media #{$break-m}, #{$break-l}, #{$break-sm2}, #{$break-l2} {
-    font-size: 2.3em;
+    @include text($size: 2.3em);
   }
 }
 .dietician-subtitle {
-  font-size: 2em;
+  @include text($size: 2em);
   @media #{$break-xs} {
-    font-size: 1em;
+    @include text($size: 1em);
   }
   @media #{$break-s} {
-    font-size: 1.2em;
+    @include text($size: 1.2em);
   }
   @media #{$break-m}, #{$break-sm2}, #{$break-l2} {
-    font-size: 1.5em;
+    @include text($size: 1.5em);
   }
 }
 
@@ -114,13 +113,13 @@
   }
 }
 .icon-text-subpage-dietician {
- font-size: 2em;
+ @include text($size: 2em);
  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2} {
-  font-size: 1em;
+  @include text($size: 1em);
   margin-top: 2em;
  }
  @media #{$break-l} {
-  font-size: 1.4em;
+  @include text($size: 1.4em);
  }
 }
 
@@ -146,15 +145,14 @@
 }
 
 .dietician-subpage-description {
-  line-height: 1.4;
+  @include text($l-height: 1.4em, $size: 20px);
   flex: 0 0 42vw;
-  font-size: 20px;
   background-color: $color-white;
   padding: 0.8em 3em 1.2em 3em;
   margin-top: 0;
   max-width: 400px;
   @media #{$break-xs}, #{$break-s} {
-   font-size: 13px;
+   @include text($size: 13px);
    padding: 0.8em 0.2em 0.5em 0.2em;
    flex: 0 1 auto;
    margin: auto 2em;
@@ -163,25 +161,25 @@
     max-width: none;
   }
   @media #{$break-m}, #{$break-sm2}{
+   @include text($size: 13px);
    flex-basis: 35vw;
-   font-size: 13px;
    max-width: none;
    margin: auto 4em;
   }
   @media #{$break-l2}{
+   @include text($size: 13px);
    flex-basis: 35vw;
-   font-size: 13px;
    max-width: none;
    margin: auto 2vw;
   }
   @media #{$break-l}{
+   @include text($size: 16px);
    flex-basis: 35vw;
-   font-size: 16px;
    max-width: none;
   }
   @media #{$break-xxxl}{
    max-width: 700px;
-   font-size: 22px;
+   @include text($size: 22px);
   }
 }
 
@@ -199,7 +197,7 @@
   }
 }
 .title-form {
-  font-size: 3em;
+  @include text($size: 3em);
   margin-left: 0.7em;
   @media #{$break-xs}, #{$break-s}, #{$break-m} {
     margin-left: auto;
@@ -209,13 +207,12 @@
 }
 
 %input {
+  @include text($size: 1em, $family: $font-timesnewroma);
   margin: 1em;
   background-color: $color-gray;
   border: none;
-  font-size: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: $font-timesnewroma;
 }
 
 .input-line {
@@ -245,12 +242,12 @@ textarea {
    }
 }
 button {
+  @include text($weight: bold);
   background-color: $color-black;
   color: $color-white;
   width: 6em;
   height: 2.5em;
   border: 1px solid $color-black;
-  font-weight: bold;
   margin: 2em 0em 5em 33em;
   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}, #{$break-l2} {
     margin: 2em 2em auto 2em;
@@ -286,20 +283,18 @@ button {
   }
 }
 %price-font {
-  font-family: $font-quicksand;
-  font-weight: bold;
+  @include text($weight: bold, $family: $font-quicksand);
 }
 
 .price-title {
+  @include text($size: 2em, $color: #43485e);
   @extend %price-font;
-  font-size: 2em;
-  color: #43485e;
   text-align: center;
   @media #{$break-xs}, #{$break-s}, #{$break-m} {
-    font-size: 1.3em;
+    @include text($size: 1.3em);
   }
   @media #{$break-xs} {
-    font-size: 1.6em;
+    @include text($size: 1.6em);
   }
 }
 .price-logo {
@@ -312,13 +307,13 @@ button {
 .price-price{
   @extend %price-font;
   @media #{$break-xs} {
-    font-weight: normal;
+    @include text($weight: normal);
   }
 }
 .price-time{
   @extend %price-font;
   @media #{$break-xs} {
-    font-weight: normal;
+    @include text($weight: normal);
   }
   @media #{$break-l} {
     margin-top: -1em;
@@ -327,8 +322,8 @@ button {
 .price-text{
  padding: 1em 2em;
  @media #{$break-xs}, #{$break-m} {
+   @include text($size: 0.8em);
    padding: 0.5em 1em;
-   font-size: 0.8em;
  }
  @media #{$break-s}, #{$break-l} {
    padding: 1em;

@@ -86,3 +86,22 @@ $break-xxxl: "(min-width: 1800px) and (max-width: 2000px)";
   justify-content: $just;
   flex-wrap: $wrap;
 }
+
+@mixin text(
+ $size: null,
+ $l-height: null,
+ $weight: null,
+ $color: null,
+ $family: null,
+ $style: null,
+ $transform: null,
+)
+{
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+  font-style: $style;
+  text-transform: $transform;
+}
