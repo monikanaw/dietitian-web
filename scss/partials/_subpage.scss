@@ -46,7 +46,7 @@
    margin: 15em auto 2em auto;
   }
   @media #{$break-l}, #{$break-l2}{
-    margin: 25em 2vw 8em 2vw;
+    margin: 25em 5vw 8em 5vw;
     justify-content: space-between;
   }
 }
@@ -83,7 +83,6 @@
   @media #{$break-l2}{
     height: 60vh;
     max-width: 60vw;
-    margin: 0em 0em 2em 1.5em;
   }
   @media #{$break-xl2}{
     height: 50vh;
@@ -96,9 +95,8 @@
 }
 
 .dietician-subpage-icons {
-  @include flexy($dir: column);
   position: absolute;
-  top: 28em;
+  @include flexy($dir: column);
   @media #{$break-xs}{
    @include translateX{
      top: 15em;
@@ -109,6 +107,10 @@
    @include translateX {
    top: 23em;
    }
+  }
+  @media #{$break-xl2}, #{$break-l}{
+   top: 23em;
+   float: right;
   }
 }
 .icon-text-subpage-dietician {
@@ -125,9 +127,14 @@
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em;
-  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}{
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}, #{$break-l}{
     width: 1.5em;
     height: 1.5em;
+    padding: 0.4em .5em .2em 0em;
+  }
+  @media #{$break-l2}, #{$break-xl2}{
+    width: 2em;
+    height: 2em;
     padding: 0.4em .5em .2em 0em;
   }
   &-dietician {
