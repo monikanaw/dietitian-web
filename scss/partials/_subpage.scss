@@ -127,15 +127,15 @@
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em;
-  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}, #{$break-l}{
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}{
     width: 1.5em;
     height: 1.5em;
     padding: 0.4em .5em .2em 0em;
   }
-  @media #{$break-l2}, #{$break-xl2}{
+  @media #{$break-l2}, #{$break-xl2}, #{$break-sm2}{
     width: 2em;
     height: 2em;
-    padding: 0.4em .5em .2em 0em;
+    padding: 0.4em 1em .2em 0em;
   }
   &-dietician {
     @include flexy();
@@ -178,7 +178,6 @@
    flex-basis: 35vw;
    font-size: 16px;
    max-width: none;
-   // margin: 0em 4em auto 4em;
   }
   @media #{$break-xxxl}{
    max-width: 700px;

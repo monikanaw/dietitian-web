@@ -775,16 +775,16 @@ ul li {
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 851px) and (max-width: 1060px) {
+  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 851px) and (max-width: 1060px) {
     .icon-subpage {
       width: 1.5em;
       height: 1.5em;
       padding: 0.4em .5em .2em 0em; } }
-  @media (min-width: 840px) and (max-width: 920px) and (orientation: landscape), (min-width: 921px) and (max-width: 1450px) and (orientation: landscape) {
+  @media (min-width: 840px) and (max-width: 920px) and (orientation: landscape), (min-width: 921px) and (max-width: 1450px) and (orientation: landscape), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .icon-subpage {
       width: 2em;
       height: 2em;
-      padding: 0.4em .5em .2em 0em; } }
+      padding: 0.4em 1em .2em 0em; } }
   .icon-subpage-dietician {
     display: flex; }
     .icon-subpage-dietician p {
