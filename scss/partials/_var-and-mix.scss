@@ -60,3 +60,29 @@ $break-xxxl: "(min-width: 1800px) and (max-width: 2000px)";
   transform: translateX(-50%);
   @content;
 }
+
+@mixin translateXY {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @content;
+}
+
+@mixin roundy($height, $width, $border) {
+  height: $height;
+  width: $width;
+  border-radius: $border;
+}
+
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $just: null,
+  $wrap: null)
+  {
+  display: $disp;
+  flex-direction: $dir;
+  justify-content: $just;
+  flex-wrap: $wrap;
+}

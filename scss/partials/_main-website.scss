@@ -17,16 +17,14 @@
 }
 
 .text {
+ @include translateXY{
  color: $color-white;
  font-size: 5em;
  text-align: center;
  line-height: 0.7;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
  line-height: 0em;
  width: 100%;
+}
 }
 
 .title-diet{
@@ -79,18 +77,17 @@
 }
 
 .about-text{
+  @include translateXY{
   font-size: 1.8em;
   width: 80vw;
-  left: 50%;
-  top: 50%;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(-50%, -50%);
   text-align: center;
   font-family: $font-literata;
   line-height: 1.6;
   position: absolute;
   z-index: 6;
+  }
   @media #{$break-xs}{
    font-size: 1.1em;
    line-height: normal;
@@ -169,24 +166,20 @@
   }
 }
 .avocado-squares{
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flexy($just: space-between, $wrap: wrap);
   margin: auto;
   @media #{$break-sm2}, #{$break-l2}{
    justify-content: space-around;
   }
 }
 .diseases-block {
+  @include roundy(33vh, 25vw, 12px);
   flex: 0 1 25vw;
   background-color: $color-white;
-  width: 25vw;
-  height: 33vh;
   max-height: 220px;
   max-width: 400px;
-  border-radius: 12px;
   margin: 2em auto;
-  display: flex;
+  @include flexy();
   @media #{$break-xs}{
    flex-grow: 1;
    flex-shrink: 0;
@@ -264,7 +257,7 @@
      }
   }
   &-display {
-  display: flex;
+  @include flexy();
   max-width: 90%;
   margin: auto;
   padding-bottom: 5em;
@@ -284,10 +277,8 @@
   padding: 0.8em;
   text-align: center;
   img {
-  width: 250px;
-  height: 250px;
-    text-align: center;
-  border-radius: 150px;
+  @include roundy(250px, 250px, 150px);
+  text-align: center;
   margin: auto;
     @media #{$break-xs}{
       width: 100px;
@@ -356,7 +347,7 @@
 
 }
 .address-text {
-  display: flex;
+  @include flexy();
   margin: 0em 3em 3em 3em;
   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}{
    flex-direction: column;
@@ -418,9 +409,8 @@
 }
 
 .image-office {
-  width: 38vw;
-  margin-top: 7em;
-  border-radius: 15px;
+    @include roundy(auto, 38vw, 15px);
+     margin-top: 7em;
     @media #{$break-xs}{
       width: 90vw;
       margin-top: -1em;
@@ -446,11 +436,10 @@
     }
 }
 .address-contact {
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
   margin: 2em 0em;
   div {
-  display: flex;
+  @include flexy();
   max-width: 40vw;
   }
   p {

@@ -37,21 +37,21 @@
 
 /* */
 .dietician-subpage-info {
-  display: flex;
-  margin: 25em 10% 8em 10%;
+  @include flexy($just: space-around);
+  margin: 25em auto 8em auto;
   min-height: 100vh;
-  justify-content: space-around;
   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}{
    flex-direction: column;
    justify-content: center;
    margin: 15em auto 2em auto;
   }
-  @media #{$break-xl2}, #{$break-l2}, #{$break-l}{
-    margin: 25em 5% 8em 5%;
+  @media #{$break-l}, #{$break-l2}{
+    margin: 25em 2vw 8em 2vw;
+    justify-content: space-between;
   }
 }
 .dietician-subpage-image{
-  flex: 1;
+  flex: 0 0 auto;
   position: relative;
   @media #{$break-xs}{
     flex: 0 0 600px;
@@ -61,8 +61,8 @@
   }
 }
 .photo-of-dietician-subpage {
-  width: 30vw;
-  height: 65vh;
+  height: 50vh;
+  max-width: 45vw;
   max-width: 350px;
   max-height: 350px;
   @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-l}, #{$break-sm2}{
@@ -87,7 +87,7 @@
   }
   @media #{$break-xl2}{
     height: 50vh;
-    max-width: 45vw;
+    max-width: 50vw;
   }
   @media #{$break-xxxl}{
     max-width: 450px;
@@ -96,8 +96,7 @@
 }
 
 .dietician-subpage-icons {
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
   position: absolute;
   top: 28em;
   @media #{$break-xs}{
@@ -106,13 +105,10 @@
      margin-top: 1vh;
    }
   }
-  @media #{$break-m}, #{$break-s}, #{$break-sm2}, #{$break-l2}{
+  @media #{$break-m}, #{$break-s}, #{$break-sm2}{
    @include translateX {
    top: 23em;
    }
-  }
-  @media #{$break-l2}{
-   font-size: 0.8em;
   }
 }
 .icon-text-subpage-dietician {
@@ -129,13 +125,13 @@
 .icon-subpage {
   width: 3em;
   padding: 0.8em 2em 2em 0em;
-  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2} {
+  @media #{$break-xs}, #{$break-s}, #{$break-m}, #{$break-sm2}{
     width: 1.5em;
     height: 1.5em;
     padding: 0.4em .5em .2em 0em;
   }
   &-dietician {
-    display: flex;
+    @include flexy();
     p {
      padding: 0em 2em 2em 0em;
     }
@@ -159,17 +155,23 @@
   @media #{$break-s} {
     max-width: none;
   }
-  @media #{$break-m}, #{$break-sm2}, #{$break-l2}{
+  @media #{$break-m}, #{$break-sm2}{
    flex-basis: 35vw;
    font-size: 13px;
    max-width: none;
    margin: auto 4em;
   }
+  @media #{$break-l2}{
+   flex-basis: 35vw;
+   font-size: 13px;
+   max-width: none;
+   margin: auto 2vw;
+  }
   @media #{$break-l}{
    flex-basis: 35vw;
    font-size: 16px;
    max-width: none;
-   margin: 0em 4em auto 4em;
+   // margin: 0em 4em auto 4em;
   }
   @media #{$break-xxxl}{
    max-width: 700px;
@@ -256,9 +258,7 @@ button {
 .price-subpage {
   position: relative;
   padding: 5em 3em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @include flexy($wrap: wrap, $just: space-around);
   @media #{$break-xs} {
     padding: 4em 2em;
   }
