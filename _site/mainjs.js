@@ -26,7 +26,7 @@ $(document).ready(function() {
     $('body').css('background', '#eeecec');
   }
 
-  $('#hoverDropDownMenu').click(function() {
+  $('#hoverDropDownMenu').on('click touchstart',function() {
     $('.hidden-drop-down-menu').toggleClass('show-drop-down-menu');
   });
 
