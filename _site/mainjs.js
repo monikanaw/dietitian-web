@@ -35,7 +35,7 @@ $(document).ready(function() {
         center: [51.1110390,17.0347980],
         zoom: 18,
         scrollWheelZoom: false,
-        // dragging: false,
+        dragging: false,
         tap: false
     });
 
