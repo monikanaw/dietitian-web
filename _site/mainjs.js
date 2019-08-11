@@ -43,5 +43,5 @@ $(document).ready(function() {
 
    map.scrollWheelZoom.disable();
     this.map.on('click', () => { this.map.scrollWheelZoom.enable();});
-    this.map.on('mouseout', () => { this.map.scrollWheelZoom.disable();});
+    // this.map.on('mouseout', () => { this.map.scrollWheelZoom.disable();});
 });
