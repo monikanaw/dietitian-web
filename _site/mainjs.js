@@ -32,8 +32,8 @@ $(document).ready(function() {
 
    var map = L.map('map').setView([51.1110390,17.0347980], 18);
 
-   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+   L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
    }).addTo(map);
 
    var marker = L.marker([51.1110390,17.0347980]).addTo(map);
