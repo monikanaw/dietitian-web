@@ -60,6 +60,4 @@ $(document).ready(function() {
        e.currentTarget.classList.remove('swiping')
      }
    }
-    // this.map.on('click', () => { this.map.scrollWheelZoom.enable();});
-    // this.map.on('mouseout', () => { this.map.scrollWheelZoom.disable();});
 });
