@@ -42,6 +42,7 @@ $(document).ready(function() {
    popup.openPopup();
 
    map.scrollWheelZoom.disable();
-    this.map.on('click', () => { this.map.scrollWheelZoom.enable();});
+   map.once('focus', function() { map.scrollWheelZoom.enable(); });
+    // this.map.on('click', () => { this.map.scrollWheelZoom.enable();});
     // this.map.on('mouseout', () => { this.map.scrollWheelZoom.disable();});
 });
