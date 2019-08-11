@@ -30,7 +30,15 @@ $(document).ready(function() {
     $('.hidden-drop-down-menu').toggleClass('show-drop-down-menu');
   });
 
-   var map = L.map('map').setView([51.1110390,17.0347980], 18);
+   // var map = L.map('map').setView([51.1110390,17.0347980], 18);
+
+   var map = L.map('map', {
+        center: [51.1110390,17.0347980],
+        zoom: 18,
+        scrollWheelZoom: false,
+        dragging: false,
+        tap: false
+    });
 
    L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -42,7 +50,17 @@ $(document).ready(function() {
    popup.openPopup();
 
    map.scrollWheelZoom.disable();
-   map.once('focus', function() { map.scrollWheelZoom.enable(); });
+
+   map.addEventListener("touchstart", onTwoFingerDrag);
+   map.addEventListener("touchend", onTwoFingerDrag);
+
+   function onTwoFingerDrag (e) {
+     if (e.type === 'touchstart' && e.touches.length === 1) {
+       e.currentTarget.classList.add('swiping')
+     } else {
+       e.currentTarget.classList.remove('swiping')
+     }
+   }
     // this.map.on('click', () => { this.map.scrollWheelZoom.enable();});
     // this.map.on('mouseout', () => { this.map.scrollWheelZoom.disable();});
 });
