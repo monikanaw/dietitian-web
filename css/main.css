@@ -891,10 +891,7 @@ button {
   width: 6em;
   height: 2.5em;
   border: 1px solid #000;
-  margin: 2em 0em 5em 33em; }
-  @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait), (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 601px) and (max-width: 850px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape), (min-width: 840px) and (max-width: 920px) and (orientation: landscape) {
-    button {
-      margin: 2em 2em auto 2em; } }
+  margin: 2em 0em 5em 0em; }
 
 /*price-list*/
 .price-container {
