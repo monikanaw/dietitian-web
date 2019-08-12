@@ -623,7 +623,7 @@ ul li {
   @media (min-width: 320px) and (max-width: 460px) and (orientation: portrait) {
     .images-contact {
       height: 1.5rem;
-      width: 1.5em;
+      width: 1.5rem;
       padding-right: 0.5em; } }
   @media (min-width: 461px) and (max-width: 600px) and (orientation: portrait), (min-width: 461px) and (max-width: 839px) and (orientation: landscape) {
     .images-contact {
@@ -891,7 +891,7 @@ button {
   width: 6em;
   height: 2.5em;
   border: 1px solid #000;
-  margin: 0em 0em 5em 0em; }
+  margin: 2em 0em 5em 0em; }
 
 /*price-list*/
 .price-container {
